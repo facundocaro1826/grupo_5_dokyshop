@@ -34,3 +34,10 @@ https://www.timberline.com.ar/       --> Si bien no nos atrae la gama de colores
 https://www.latiendadepichichos.com/  -->  Se observa la simpleza sin demaciados colores y la muestra de los productos en primer plano, es una mas de las opciones para inspirar una aplicacion web. Facil navegacion y entendimiento para cualquier persona que navegue por la aplicacion.-
 
 https://www.natural-life.com.ar/   -->  Otra variante a tener en cuenta a la hora de decidir por tonos, el formulario de inicio de sesion y el carrito no son tan de agrado pero ayuda a ver las variantes de formas de implementar que hay.-
+
+
+Fondo: Optamos por un fondo blanco para proporcionar un lienzo limpio y resaltar la información y elementos clave de nuestro proyecto. El blanco transmite simplicidad, claridad y permite que los demás colores destaquen.
+
+Header y Footer (color FDBC00): El color FDBC00, elegido estratégicamente para el encabezado y pie de página, aporta una dosis de energía y alegría. Este tono cálido y amigable simboliza la conexión emocional entre las mascotas y sus dueños, lo que ayuda a captar la atención del espectador desde el principio y al final de la página.
+
+tipografia: se utilizó Open Sans  en bold en todos los titulos, precio, botones y Montserrat a los textos.
