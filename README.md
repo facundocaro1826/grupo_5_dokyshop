@@ -14,13 +14,12 @@ Dirigido a :
 A todas las personas que tienen mascota/s. Y deceen su bienestar brindandole los mejores productos y servicios disponibles.
 
 
-Integrantes del Grupo 5 Comision 24:
-
-Maria Florencia Cajal
-Gaston Ayala Gimenez,
-Adriana Escubilla,
-Patricia Isabel Gonzalez,
-Sofia Alejandra Rojas Mosqueira.
+# Integrantes del Grupo 5 Comision 24:
+- Maria Florencia Cajal, pcia. Bs.As., hobbie: Me gusta cocinar.-
+- Gaston Ayala Gimenez, Pcia. Bs As., hobbie: Me gusta la música y jugar videojuegos con amigos, Estudiante de desarrollo web full stack.-
+- Adriana Escubilla, Pcia. Bs. As., hobbie: Me gusta escuchar musica y pasear.-
+- Patricia Isabel Gonzalez, Pcia. de Bs.As., hobbie: Tocar la guitarra.-
+- Sofia Alejandra Rojas Mosqueira, Pcia. de Bs. As.,  Hobby: Jugar a la play.
 
 
 Sitios de Referencia:
