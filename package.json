@@ -1,0 +1,26 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "Somos un grupo de Programadores que nos encontramos con un desafio al cual queremos afrontar. La empresa \"H Venture Capitals\" solicita el desarrollo una pagina E-commerce orientado al publico que decea adquirir accesorios, vestimenta y juguetes para mascotas. La cual @Ecode nos encomienda el desarrollo de la misma.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/facundocaro1826/grupo_5_e-commerce.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/facundocaro1826/grupo_5_e-commerce/issues"
+  },
+  "homepage": "https://github.com/facundocaro1826/grupo_5_e-commerce#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.3"
+  }
+}
