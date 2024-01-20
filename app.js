@@ -14,7 +14,7 @@ app.get('/', (req, res)=>{
 })
 
 app.get('/productDetail', (req, res)=>{
-    res.sendFile(createPath('(productDetail')) // Gaston 
+    res.sendFile(createPath('productDetail')) // Gaston 
 })
 
 app.get('/productCar', (req, res)=>{
@@ -29,11 +29,7 @@ app.get('/login', (req, res)=>{
     res.sendFile(createPath('login'))     // Adriana
 })
 
-
-
-
-
-
-
 /* server */
 app.listen(port, ()=> console.log(`http://localhost:${(port)}`))
+
+
