@@ -1,118 +1,382 @@
-.main-home {
-    text-align: center;
-    padding: 10px;
+body{
+  
 }
 
-.image-container {
-    position: relative;
-    display: inline-block;
+main.register-main{
+    width: 100%;
+    margin: auto;
+    background: linear-gradient(rgb(231 232 233 / 70%), rgb(232 233 235 / 80%)), url(/images/other/fondo-login.jpeg);
+    background-position: center center;
+    background-size: cover;
+    padding-top: 20px;
 }
 
-.image-container img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto; 
+main.register-main h1{
+    font-size: 22px;
+    font-weight: bold;
+    margin: auto;
+    width: 260px;
+    padding: 5px;
+    margin-top: 20px;
+    font-family: var(--familyOpenSans);
+    color: #666262;
 }
 
-.action-button {
-    position: absolute;
-    bottom: 10px;
-    left: 10px; 
-    padding: 10px;
+main.register-main form.form-principal{
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.icons-container {
-    position: absolute;
-    top: 50%; 
-    transform: translateY(-50%);
+main.register-main form.form-principal .contenedor-form{
+    width: 90%;margin: auto;}
+
+main.register-main form.form-principal .contenedor-form .nombre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main.register-main form.form-principal .contenedor-form .nombre label{
+    width: 90%;
+    color: var(--naranjaig);
+    font-weight: bold;
+}
+
+main.register-main form.form-principal .contenedor-form .nombre input{
+    width: 90%;
+    margin: 10px 0;
+    padding: 5px;
+    border: solid 2px  var(--amarillo);
+    font-size: 16px;
+    padding-left: 5px;
+    border-radius: 4px;
+}
+
+main.register-main form.form-principal .contenedor-form .email{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main.register-main form.form-principal .contenedor-form .email label{
+    width: 90%;
+    color: var(--naranjaig);
+    font-weight: bold;
+}
+
+main.register-main form.form-principal .contenedor-form .email input{
+    width: 90%;
+    margin: 10px 0;
+    padding: 5px;
+    border: solid 2px var(--amarillo);
+    font-size: 16px;
+    padding-left: 5px;
+    border-radius: 4px;
+}
+
+main.register-main form.form-principal .contenedor-form .contrasenia{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main.register-main form.form-principal .contenedor-form .contrasenia label{
+    width: 90%;
+    color: var(--naranjaig);
+    font-weight: bold;
+}
+
+main.register-main form.form-principal .contenedor-form .contrasenia input{
+    width: 90%;
+    margin: 10px 0;
+    padding: 5px;
+    border: solid 2px var(--amarillo);
+    font-size: 16px;
+    padding-left: 5px;
+    border-radius: 4px;
+}
+
+main.register-main form.form-principal .recaptcha{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+main.register-main form.form-principal .contenedor-button{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+main.register-main form.form-principal .contenedor-button .boton{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.icons-container i {
-    font-size: 20px; 
-    margin: 0 10px; 
-    cursor: pointer;
-}
-
-
-/* Media query para tablet (hasta 768px) */
-@media (max-width: 768px) {
-    .main-home {
-        padding: 8px;
-    }
-
-    .action-button {
-        font-size: 14px; /* Ajusta según sea necesario */
-        padding: 8px;
-        bottom: 5px; /* Ajusta según sea necesario para la distancia desde la parte inferior */
-        left: 5px; /* Ajusta según sea necesario para la distancia desde la izquierda */
-    }
-
-    .icons-container {
-        top: 50%;
-        transform: translateY(-50%);
-        justify-content: space-between;
-    }
-
-    .icons-container i {
-        font-size: 40px; /* Ajusta según sea necesario */
-        margin: 0 5px; /* Ajusta según sea necesario */
-    }
-}
-
-/* Media query para desktop (hasta 1200px) */
-@media (min-width: 769px) and (max-width: 1200px) {
-    .main-home {
-        padding: 15px;
-    }
-
-    .action-button {
-        font-size: 16px; /* Ajusta según sea necesario */
-        padding: 10px;
-        bottom: 10px; /* Ajusta según sea necesario para la distancia desde la parte inferior */
-        left: 10px; /* Ajusta según sea necesario para la distancia desde la izquierda */
-    }
-
-    .icons-container {
-        top: 50%;
-        transform: translateY(-50%);
-        justify-content: space-between;
-    }
-
-    .icons-container i {
-        font-size: 60px; /* Ajusta según sea necesario */
-        margin: 0 15px; /* Ajusta según sea necesario */
-    }
+main.register-main form.form-principal .contenedor-button .boton a.whatsApp{
+    display: block;
 }
 
 
+main.register-main form.form-principal .contenedor-button .boton a.whatsApp .fa-whatsapp{
+    font-size: 30px;
+    position: absolute;
+    right: 30px;
+    color: var(--verde);
+    transition: all 450ms;
+}
+
+main.register-main form.form-principal .contenedor-button .boton a.whatsApp .fa-whatsapp:hover{
+    color: var(--verdeOscuro);
+    font-size: 45px;
+   
+}
+
+main.register-main form.form-principal .contenedor-button button.submit{
+    width: 40%;
+    padding: 10px 0;
+    background-color: var(--naranjaig);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: all 0.5s;
+    border: 1px solid #c1a554;
+    color: white;
+    transition: all 400ms;
+}
+
+main.register-main form.form-principal .contenedor-button button.submit:hover{
+    background-color: rgb(210, 90, 53);
+    color: white;}
+
+main.register-main form.form-principal .contenedor-button .inicio{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main.register-main form.form-principal .contenedor-button p{
+    margin: 20px 0;
+    width: 50%;
+    text-align: center;
+}
+
+main.register-main form.form-principal .contenedor-button a.inicio-session{
+    margin: 20px 0 20px 0px;
+    color: var(--naranjaig);
+    width: 47%;
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+    transition: all 0.5s;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main.register-main form.form-principal .contenedor-button a.inicio-session:hover{
+    color: rgb(215, 104, 104);
+}
 
 
 
 
-<button class="action-button">COMPRAR</button>
-<div class="carousel-arrows left">
-    <i class="fa-solid fa-angle-left"></i>
-  </div>
-  <div class="carousel-arrows right">
-    <i class="fa-solid fa-angle-right"></i>
-  </div>
-<div class="circle">
-<i class="fa-regular fa-circle"></i>
-<i class="fa-solid fa-circle"></i>
-<i class="fa-regular fa-circle"></i>
-</div>
-<div class="icons">
-    <i class="fa-solid fa-truck-fast"></i>
-    <h4>ENVIOS SIN CARGO</h4>
-    <P>Envios en toda CABA y alrededores</P>
-    <i class="fa-solid fa-dollar-sign"></i>
-    <h4>DESCUENTO EXTRA</h4>
-    <P>Pagango tus compras en efectivo</P>
-    <i class="fa-solid fa-credit-card"></i>
-    <h4>PAGA CON TARJETA</h4>
-    <p>Tambien podes pagar en cuotas</p>
-</div>
+
+/* tablet register */
+
+@media (min-width: 768px) {
+body{
+}
+
+main.register-main{}
+
+main.register-main h1{}
+
+main.register-main form.form-principal{}
+
+main.register-main form.form-principal .contenedor-form{
+    width: 80%;
+}
+
+main.register-main form.form-principal .contenedor-form .nombre{}
+
+main.register-main form.form-principal .contenedor-form .nombre label{}
+
+main.register-main form.form-principal .contenedor-form .nombre input{}
+
+main.register-main form.form-principal .contenedor-form .email label{}
+
+main.register-main form.form-principal .contenedor-form .email input{}
+
+main.register-main form.form-principal .contenedor-form .email{}
+
+main.register-main form.form-principal .contenedor-form .contrasenia{}
+
+main.register-main form.form-principal .contenedor-form .contrasenia label{}
+
+main.register-main form.form-principal .contenedor-form .contrasenia input{}
+
+main.register-main form.form-principal .recaptcha{
+    margin: 15px auto;
+}
+
+main.register-main form.form-principal .contenedor-button{}
+
+main.register-main form.form-principal .contenedor-button .boton{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+main.register-main form.form-principal .contenedor-button button.submit{
+}
+
+main.register-main a.whatsApp{
+    text-decoration: none;
+    display: inline-flex;
+}
+
+main.register-main form.form-principal .contenedor-button .boton a.whatsApp .fa-whatsapp{
+    font-size: 40px;
+}
+
+
+main.register-main form.form-principal .contenedor-button p{
+}
+
+main.register-main form.form-principal .contenedor-button .inicio{
+    width: 70%;
+}
+
+main.register-main form.form-principal .contenedor-button a.inicio-session{}
+
+
+}
+
+
+
+/* destok escritorio */
+
+@media (min-width: 1024px) {
+   
+        body{
+        
+height: auto;
+        }
+    
+    main.register-main{
+    height: 550px;
+}
+    
+    main.register-main h1{}
+    
+    main.register-main form.form-principal{display: flex;flex-wrap: wrap;width: 80%;margin: auto;position: relative;}
+    
+    main.register-main form.form-principal .contenedor-form{
+}
+    
+    main.register-main form.form-principal .contenedor-form .nombre{
+    justify-content: center;
+    align-items: center;
+}
+    
+    main.register-main form.form-principal .contenedor-form .nombre label{
+    width: 20%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+    main.register-main form.form-principal .contenedor-form .nombre input{
+    width: 50%;
+    height: 35px;
+    border-radius: 3px;
+}
+
+    main.register-main form.form-principal .contenedor-form .email{
+    justify-content: center;
+    align-items: center;
+}
+
+    main.register-main form.form-principal .contenedor-form .email label{
+    width: 20%;
+    font-size: 20px;
+}
+
+    main.register-main form.form-principal .contenedor-form .email input{
+    width: 50%;
+    height: 35px;
+    border-radius: 3px;
+}
+    
+    main.register-main form.form-principal .contenedor-form .contrasenia{
+    justify-content: center;
+    align-items: center;
+}
+
+    main.register-main form.form-principal .contenedor-form .contrasenia label{
+    width: 20%;
+    font-size: 20px;
+}
+
+    main.register-main form.form-principal .contenedor-form .contrasenia input{
+    width: 50%;
+    height: 35px;
+    border-radius: 3px;
+}
+
+    main.register-main form.form-principal .recaptcha{
+    margin: 10px auto;
+    width: 30%;
+    margin: 0;
+    margin-left: 10px;
+    padding: 30px 0;
+}
+    
+    main.register-main form.form-principal .contenedor-button{
+    width: 50%;
+    margin: 0;
+}
+
+    main.register-main form.form-principal .contenedor-button .boton{
+    width: 40%;
+    align-items: center;
+    height: 100px;
+    margin-top: 20px;
+    }
+    
+    main.register-main form.form-principal .contenedor-button .boton a.whatsApp{
+    position: absolute;
+    right: 20px;
+    bottom: 90px;
+}
+
+    main.register-main form.form-principal .contenedor-button .boton .fa-whatsapp{
+    font-size: 50px;
+    color: var(--verde);
+}
+    
+    main.register-main form.form-principal .contenedor-button button.submit{
+    width: 60%;
+    height: 40%;
+    margin: 0;
+    color: white;
+}
+    main.register-main form.form-principal .contenedor-button .inicio{
+    width: 50%;
+    margin: 20px 0;
+}
+
+    main.register-main form.form-principal .contenedor-button p{
+}
+    
+    main.register-main form.form-principal .contenedor-button a.inicio-session{}
+    
+
+}
