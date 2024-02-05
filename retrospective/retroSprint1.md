@@ -20,4 +20,4 @@
 - Subestimar los tiempos
 
 
-![estrellaRetro-1.png](/estrellaRetro-1.jpg)
+![estrellaRetro-1.png](/retrospective/estrellaRetro-1.jpg)
