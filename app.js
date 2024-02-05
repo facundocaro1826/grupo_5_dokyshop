@@ -17,15 +17,15 @@ app.get('/detalle-de-producto', (req, res)=>{
     res.sendFile(createPath('productDetail')) // Gaston 
 })
 
-app.get('/productCar', (req, res)=>{
+app.get('/carrito', (req, res)=>{
     res.sendFile(createPath('productCar'))  // Sofia
 })
 
-app.get('/register', (req, res)=>{
+app.get('/registro', (req, res)=>{
     res.sendFile(createPath('register'))     //Pato
 })
 
-app.get('/login', (req, res)=>{
+app.get('/inicio', (req, res)=>{
     res.sendFile(createPath('login'))     // Adriana
 })
 

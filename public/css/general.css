@@ -24,7 +24,10 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+<<<<<<< HEAD
     font-family: var(--familyOpenSans);
+=======
+>>>>>>> carrito-ecommerce
 }
 
 a {
