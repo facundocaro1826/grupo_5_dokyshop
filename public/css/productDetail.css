@@ -263,7 +263,7 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin: 10px 0
+        margin: 10px 0;
     }
     
     .productDetail .breadcrumb-container .breadcrum {}
@@ -282,7 +282,7 @@
     
     .productDetail .prodDetail-glider-container {
         width: 50%;
-        margin: 0
+        margin: 0;
     }
     
     .productDetail .prodDetail-glider-container .prodDetail-glider {}
@@ -309,7 +309,7 @@
         width: 50%;
         gap: 15px;
         align-content: flex-start;
-        padding: 0px 3px
+        padding: 0px 3px;
     }
     
     .productDetail .prodDetail-container .prodDetail-title {}
@@ -412,7 +412,7 @@
     /* -------- PRODUCT GLIDER -------- */
     
     .productDetail .prodDetail-glider-container {
-        width: 50%
+        width: 50%;
     }
     
     .productDetail .prodDetail-glider-container .prodDetail-glider {}
@@ -420,19 +420,19 @@
     .productDetail .prodDetail-glider-container .prodDetail-glider .prodDetail-content-container {}
     
     .productDetail .prodDetail-glider-container .prodDetail-glider .prodDetail-content-container .prodDetail-image-container {
-        width: 100%
+        width: 100%;
     }
     
     .productDetail .prodDetail-glider-container .prodDetail-glider .prodDetail-content-container .prodDetail-image-container img {}
     
     .productDetail .prodDetail-glider-container .glider-prev {
-        left: 10%
+        left: 10%;
     }
     
     .productDetail .prodDetail-glider-container .glider-prev i {}
     
     .productDetail .prodDetail-glider-container .glider-next {
-        right: 10%
+        right: 10%;
     }
     
     .productDetail .prodDetail-glider-container .glider-next i {}
@@ -481,7 +481,7 @@
     .productDetail .relatedProduct-container .relatedProduct-title {}
     
     .productDetail .relatedProduct-container .relatedProd {
-        width: calc(24% - 1px)
+        width: calc(24% - 1px);
     }
     
     .productDetail .relatedProduct-container .relatedProd .relatedProd-img-container {}
