@@ -1,0 +1,36 @@
+:root {
+    /* COLORES */
+    --amarillo: #FDBC00;
+    --marron: #EFB810;
+    --amarilloPastel: #F8DF94;
+    --marronclaro: #fff2cc;
+    --rosa: #FED7D7;
+    --blanco: #FFFFFF;
+    --gris: #6D6D6D;
+    --negro: #000000;
+    --grisOscuro: #363636;
+    --azulfb: #0866ff;
+    --naranjaig: #fd6a2d;
+
+
+    /* TIPOGRAFIAS */
+    --familyOpenSans: 'Open Sans', sans-serif;
+    --familyMontserrat: 'Montserrat', sans-serif; 
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--familyOpenSans);
+}
+
+a {
+    color: var(--negro);
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+

@@ -13,7 +13,7 @@ app.get('/', (req, res)=>{
     res.sendFile(createPath('index'))  //home => Florencia
 })
 
-app.get('/productDetail', (req, res)=>{
+app.get('/detalle-de-producto', (req, res)=>{
     res.sendFile(createPath('productDetail')) // Gaston 
 })
 
@@ -30,6 +30,6 @@ app.get('/login', (req, res)=>{
 })
 
 /* server */
-app.listen(port, ()=> console.log(`http://localhost:${(port)}`))
+app.listen(port, /*()=> console.log(`http://localhost:${(port)}`)*/)
 
 
