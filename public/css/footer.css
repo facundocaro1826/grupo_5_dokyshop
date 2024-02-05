@@ -47,7 +47,13 @@
 
 .main-footer div.links-container .links-nav ul li {}
 
-.main-footer div.links-container .links-nav ul li a {}
+.main-footer div.links-container .links-nav ul li a {
+    
+}
+
+.main-footer div.links-container .links-nav ul li a:hover {
+    border-bottom: 3px solid var(--amarilloPastel);
+}
 
 /* ----- CONTACTO ----- */
 
@@ -112,6 +118,11 @@
     border-radius: 50%;
     background-color: var(--grisOscuro);
     padding: 3px;
+    transition: all 0.5s;
+}
+
+.main-footer .socials-container .socials-nav ul li:hover {
+    border: 8px solid var(--amarilloPastel);
 }
 
 .main-footer .socials-container .socials-nav ul li a {
@@ -127,7 +138,7 @@
 .main-footer .socials-container .socials-nav ul li a.instagram {
     color: var(--naranjaig);
 }
-.main-footer .socials-container .socials-nav ul li a.tiktok {
+.main-footer .socials-container .socials-nav ul li a.tiktok {   
     color: var(--blanco);
 }
 
@@ -156,6 +167,12 @@
 
 .main-footer .newsletter-container .newsletter-form .newsletter-title-container .newsletter-title {}
 
+.main-footer .newsletter-container .newsletter-form .text-container {
+    width: 100%;
+}
+
+.main-footer .newsletter-container .newsletter-form .text-container p {}
+
 .main-footer .newsletter-container .newsletter-form div.email-container {
 }
 
@@ -165,6 +182,11 @@
     background-color: var(--marronclaro);
     font-family: var(--familyOpenSans);
     font-weight: bold;
+    transition: all 0.5s;
+}
+
+.main-footer .newsletter-container form.newsletter-form .email-container input:hover {
+    border: 3px solid var(--negro);
 }
 
 .main-footer .newsletter-container form.newsletter-form .email-container input::placeholder {
@@ -174,11 +196,12 @@
     font-weight: bold;
     outline: none;
 }
+
 .main-footer .newsletter-container form.newsletter-form .email-container input:focus {
     outline: none;
 }
 .main-footer .newsletter-container form.newsletter-form div.suscribe-container {
-    padding: 10px 10px;
+    padding: 0 10px;
 }
 
 .main-footer .newsletter-container form.newsletter-form .suscribe-container button {
@@ -188,6 +211,10 @@
     color: var(--amarillo);
     font-family: var(--familyOpenSans);
     font-weight: bold;
+    transition: all 0.5s;
+}
+.main-footer .newsletter-container form.newsletter-form .suscribe-container button:hover {
+    border: 5px solid var(--amarilloPastel);
 }
 
 /* ----- COPYRIGHT ----- */
@@ -233,6 +260,8 @@
     .main-footer div.links-container .links-nav ul li {}
     
     .main-footer div.links-container .links-nav ul li a {}
+
+    .main-footer div.links-container .links-nav ul li a:hover {}
     
     /* ----- CONTACTO ----- */
     
@@ -266,6 +295,8 @@
     .main-footer .socials-container .socials-nav ul {}
     
     .main-footer .socials-container .socials-nav ul li {}
+
+    .main-footer .socials-container .socials-nav ul li:hover {}
     
     .main-footer .socials-container .socials-nav ul li a {}
     
@@ -289,9 +320,12 @@
     }
     
     .main-footer .newsletter-container .newsletter-form .newsletter-title-container .newsletter-title {}
+
+    .main-footer .newsletter-container .newsletter-form .text-container {}
+
+    .main-footer .newsletter-container .newsletter-form .text-container p {}
     
     .main-footer .newsletter-container .newsletter-form div.email-container {
-        width: 50%;
     }
     
     .main-footer .newsletter-container form.newsletter-form .email-container input {}
@@ -301,8 +335,6 @@
     .main-footer .newsletter-container form.newsletter-form .email-container input:focus {}
     
     .main-footer .newsletter-container form.newsletter-form div.suscribe-container {
-        width: 30%;
-        padding: 0;
     }
     
     .main-footer .newsletter-container form.newsletter-form .suscribe-container input {}
@@ -319,7 +351,6 @@
 }
 
 /* -------- DESKTOP VIEW -------- */
-
 
 @media (min-width: 769px) {
     .main-footer {}
@@ -343,6 +374,8 @@
     .main-footer div.links-container .links-nav ul li {}
     
     .main-footer div.links-container .links-nav ul li a {}
+
+    .main-footer div.links-container .links-nav ul li a:hover {}
     
     /* ----- CONTACTO ----- */
     
@@ -372,6 +405,8 @@
     .main-footer .socials-container .socials-nav ul {}
     
     .main-footer .socials-container .socials-nav ul li {}
+
+    .main-footer .socials-container .socials-nav ul li:hover {}
     
     .main-footer .socials-container .socials-nav ul li a {}
     
@@ -386,6 +421,10 @@
     .main-footer .newsletter-container form.newsletter-form div.newsletter-title-container {}
     
     .main-footer .newsletter-container .newsletter-form .newsletter-title-container .newsletter-title {}
+
+    .main-footer .newsletter-container .newsletter-form .text-container {}
+
+    .main-footer .newsletter-container .newsletter-form .text-container p {}
     
     .main-footer .newsletter-container .newsletter-form div.email-container {}
     
@@ -406,4 +445,3 @@
     .main-footer .copyright-container p {}
 
 }
-
