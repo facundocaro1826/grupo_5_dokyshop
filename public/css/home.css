@@ -1,0 +1,674 @@
+.main-home{
+    position: relative;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+   overflow: hidden;
+}
+
+.image-wrapper {
+    position: relative;
+}
+
+.image-container img {
+    max-width: 95%;
+    height: auto;
+    padding: 10px;
+    display: block;
+}
+.arrow-btn {
+    position: absolute;
+    top: 40%;
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    border: none;
+   
+}
+
+.arrow-btn.left {
+    left: 10px;
+}
+
+.arrow-btn.right {
+    right: 10px;
+}
+
+.buy-btn {
+    position: absolute;
+    bottom: 70px;
+    left: 70%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color:#fdbc00;
+    border-radius: 30px;
+    color: black;
+    border: 1px solid black ;
+    
+}
+
+/* Círculos indicadores del carrusel */
+.circle {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; 
+}
+
+.fa-circle {
+    font-size: 16px; 
+    margin: 0 5px; 
+}
+
+/* Iconos de envío, descuento y tarjeta */
+.icons-container {
+    display: flex;
+    justify-content: space-around; 
+    margin-top: 20px; 
+}
+
+.icons {
+    text-align: center;
+    max-width: 200px; 
+}
+
+.fa-solid {
+    font-size: 20px;
+    margin-bottom: 10px; 
+}
+
+.icons h4 {
+    font-size: 10px;
+    margin: 0;
+}
+
+.icons p {
+    margin: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+}
+
+
+
+/* Productos */
+.container-products {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.product {
+    position: relative;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product .product-image {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden; /* Oculta el texto que pueda sobresalir de la imagen */
+}
+
+.product img:hover {
+    transform: scale(1.1);
+}
+
+
+.product-name {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #f5f5dc; 
+    padding: 5px; 
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 10px;
+    margin: 0;
+    color: #333; 
+    overflow: hidden; 
+}
+.product-name p {
+    margin: 0;
+    max-height: 3em;
+    overflow: hidden;
+    white-space: nowrap; 
+    
+
+}
+
+/* sección de veterinario */
+.new-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.new-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.overlay-text {
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.overlay-button-left,
+.overlay-button-right,
+.additional-text-right {
+    font-weight: bold;
+}
+
+.overlay-button-left,
+.overlay-button-right {
+    padding: 5px 10px;
+    background-color: #fdbc00;
+    color: black;
+    border: 1px solid black;
+    font-size: 12px;
+    border-radius: 40px;
+}
+
+.additional-text-right {
+    margin-top: 5px;
+    font-size: 15px;
+    color: black;
+}
+
+.full-width-image {
+    max-width: 100%;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos para la sección de preguntas frecuentes (FAQs) */
+.pet-section {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.image-with-list {
+    position: relative;
+    width: 100%;
+    max-height: 150px; /* Ajusta la altura según tus preferencias */
+    overflow: hidden;
+    
+}
+
+.image-with-list img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.pet-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+
+.pet-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pet-list li {
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.fa-paw {
+    margin-right: 5px;
+}
+
+
+
+/* footer */
+
+.main-footer {
+    font-family: var(--familyOpenSans);
+    font-weight: bold;
+    background-color: #FDBC00;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.main-footer .logo-container {
+    margin: 10px auto;
+    width: 100%;
+    height: 100px;
+}
+
+.main-footer .logo-container .logo-link {}
+
+.main-footer .logo-container .logo-link img.logo-footer {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* ----- ENLACES ----- */
+
+.main-footer div.links-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px auto;
+    width: 100%;
+}
+
+.main-footer div.links-container .links-title {
+    text-align: center;
+}
+
+.main-footer div.links-container nav.links-nav {}
+
+.main-footer div.links-container .links-nav ul {
+    text-align: center;
+}
+
+.main-footer div.links-container .links-nav ul li {}
+
+.main-footer div.links-container .links-nav ul li a {}
+
+/* ----- CONTACTO ----- */
+
+.main-footer div.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px auto;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.main-footer .contact-container .contact-title {
+    text-align: center;
+}
+
+.main-footer .contact-container nav.contact-nav {}
+
+.main-footer .contact-container .contact-nav ul {}
+
+.main-footer .contact-container .contact-nav ul li {}
+
+.main-footer .contact-container .contact-nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-footer .contact-container .contact-nav ul li a i {
+    margin: 5px;
+    font-size: 1.5rem;
+}
+
+
+/* ----- REDES SOCIALES ----- */
+
+.main-footer div.socials-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 10px auto;
+    width: 100%;
+}
+
+.main-footer .socials-container .socials-title {
+    text-align: center;
+}
+
+.main-footer .socials-container nav.socials-nav {}
+
+.main-footer .socials-container .socials-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.main-footer .socials-container .socials-nav ul li {
+    border: 8px solid var(--grisOscuro);
+    border-radius: 50%;
+    background-color: var(--grisOscuro);
+    padding: 3px;
+}
+
+.main-footer .socials-container .socials-nav ul li a {
+    padding: 2px;
+}
+
+.main-footer .socials-container .socials-nav ul li a.x {
+    color: var(--blanco);
+}
+.main-footer .socials-container .socials-nav ul li a.facebook {
+    color: var(--azulfb);
+}
+.main-footer .socials-container .socials-nav ul li a.instagram {
+    color: var(--naranjaig);
+}
+.main-footer .socials-container .socials-nav ul li a.tiktok {
+    color: var(--blanco);
+}
+
+.main-footer .socials-container .socials-nav ul li a i {}
+
+/* ----- NEWSLETTER ----- */
+
+.main-footer div.newsletter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px auto;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.main-footer  .newsletter-container form.newsletter-form {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.main-footer .newsletter-container form.newsletter-form div.newsletter-title-container {
+    margin-bottom: 5px;
+}
+
+.main-footer .newsletter-container .newsletter-form .newsletter-title-container .newsletter-title {}
+
+.main-footer .newsletter-container .newsletter-form div.email-container {
+}
+
+.main-footer .newsletter-container form.newsletter-form .email-container input {
+    border: 3px solid var(--marronclaro);
+    border-radius: 10px;
+    background-color: var(--marronclaro);
+    font-family: var(--familyOpenSans);
+    font-weight: bold;
+}
+
+.main-footer .newsletter-container form.newsletter-form .email-container input::placeholder {
+    color:var(--negro);
+    padding-left: 20px;
+    font-family: var(--familyOpenSans);
+    font-weight: bold;
+    outline: none;
+}
+.main-footer .newsletter-container form.newsletter-form .email-container input:focus {
+    outline: none;
+}
+.main-footer .newsletter-container form.newsletter-form div.suscribe-container {
+    padding: 10px 10px;
+}
+
+.main-footer .newsletter-container form.newsletter-form .suscribe-container button {
+    border: 5px solid var(--negro);
+    border-radius: 20px;
+    background-color: var(--negro);
+    color: var(--amarillo);
+    font-family: var(--familyOpenSans);
+    font-weight: bold;
+}
+
+/* ----- COPYRIGHT ----- */
+
+.main-footer div.copyright-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px auto;
+    width: 100%;
+}
+
+.main-footer .copyright-container p {
+    text-align: center;
+    font-size: 13px;
+}
+
+/* -------- TABLET VIEW -------- */
+
+@media (min-width: 426px) {
+    .main-footer {}
+
+    .main-footer .logo-container {
+        width: auto;
+    }
+    .main-footer .logo-container .logo-link {}
+
+    .main-footer .logo-container .logo-link img.logo-footer {}
+    
+    /* ----- ENLACES ----- */
+    
+    .main-footer div.links-container {
+        width: auto;
+    }
+    
+    .main-footer div.links-container .links-title {}
+    
+    .main-footer div.links-container nav.links-nav {}
+    
+    .main-footer div.links-container .links-nav ul {}
+    
+    .main-footer div.links-container .links-nav ul li {}
+    
+    .main-footer div.links-container .links-nav ul li a {}
+    
+    /* ----- CONTACTO ----- */
+    
+    .main-footer div.contact-container {
+        width: auto;
+    }
+    
+    .main-footer .contact-container .contact-title {}
+    
+    .main-footer .contact-container nav.contact-nav {}
+    
+    .main-footer .contact-container .contact-nav ul {}
+    
+    .main-footer .contact-container .contact-nav ul li {}
+    
+    .main-footer .contact-container .contact-nav ul li a {}
+    
+    .main-footer .contact-container .contact-nav ul li a i {}
+    
+    
+    /* ----- REDES SOCIALES ----- */
+    
+    .main-footer div.socials-container {
+        width: auto;
+    }
+    
+    .main-footer .socials-container .socials-title {}
+    
+    .main-footer .socials-container nav.socials-nav {}
+    
+    .main-footer .socials-container .socials-nav ul {}
+    
+    .main-footer .socials-container .socials-nav ul li {}
+    
+    .main-footer .socials-container .socials-nav ul li a {}
+    
+    .main-footer .socials-container .socials-nav ul li a i {}
+    
+    /* ----- NEWSLETTER ----- */
+    
+    .main-footer div.newsletter-container {
+        width: auto;
+    }
+    
+    .main-footer  .newsletter-container form.newsletter-form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main-footer .newsletter-container form.newsletter-form div.newsletter-title-container {
+        width: 100%;
+    }
+    
+    .main-footer .newsletter-container .newsletter-form .newsletter-title-container .newsletter-title {}
+    
+    .main-footer .newsletter-container .newsletter-form div.email-container {
+        width: 50%;
+    }
+    
+    .main-footer .newsletter-container form.newsletter-form .email-container input {}
+
+    .main-footer .newsletter-container form.newsletter-form .email-container input::placeholder {}
+
+    .main-footer .newsletter-container form.newsletter-form .email-container input:focus {}
+    
+    .main-footer .newsletter-container form.newsletter-form div.suscribe-container {
+        width: 30%;
+        padding: 0;
+    }
+    
+    .main-footer .newsletter-container form.newsletter-form .suscribe-container input {}
+    
+    /* ----- COPYRIGHT ----- */
+    
+    .main-footer div.copyright-container {}
+    
+    .main-footer .copyright-container p {
+        text-align: left;
+        margin: 0 15px;
+    }
+
+}
+
+/* -------- DESKTOP VIEW -------- */
+
+
+@media (min-width: 769px) {
+    .main-footer {}
+
+    .main-footer .logo-container {}
+
+    .main-footer .logo-container .logo-link {}
+
+    .main-footer .logo-container .logo-link img.logo-footer {}
+    
+    /* ----- ENLACES ----- */
+    
+    .main-footer div.links-container {}
+    
+    .main-footer div.links-container .links-title {}
+    
+    .main-footer div.links-container nav.links-nav {}
+    
+    .main-footer div.links-container .links-nav ul {}
+    
+    .main-footer div.links-container .links-nav ul li {}
+    
+    .main-footer div.links-container .links-nav ul li a {}
+    
+    /* ----- CONTACTO ----- */
+    
+    .main-footer div.contact-container {}
+    
+    .main-footer .contact-container .contact-title {}
+    
+    .main-footer .contact-container nav.contact-nav {}
+    
+    .main-footer .contact-container .contact-nav ul {}
+    
+    .main-footer .contact-container .contact-nav ul li {}
+    
+    .main-footer .contact-container .contact-nav ul li a {}
+    
+    .main-footer .contact-container .contact-nav ul li a i {}
+    
+    
+    /* ----- REDES SOCIALES ----- */
+    
+    .main-footer div.socials-container {}
+    
+    .main-footer .socials-container .socials-title {}
+    
+    .main-footer .socials-container nav.socials-nav {}
+    
+    .main-footer .socials-container .socials-nav ul {}
+    
+    .main-footer .socials-container .socials-nav ul li {}
+    
+    .main-footer .socials-container .socials-nav ul li a {}
+    
+    .main-footer .socials-container .socials-nav ul li a i {}
+    
+    /* ----- NEWSLETTER ----- */
+    
+    .main-footer div.newsletter-container {}
+    
+    .main-footer  .newsletter-container form.newsletter-form {}
+    
+    .main-footer .newsletter-container form.newsletter-form div.newsletter-title-container {}
+    
+    .main-footer .newsletter-container .newsletter-form .newsletter-title-container .newsletter-title {}
+    
+    .main-footer .newsletter-container .newsletter-form div.email-container {}
+    
+    .main-footer .newsletter-container form.newsletter-form .email-container input {}
+
+    .main-footer .newsletter-container form.newsletter-form .email-container input::placeholder {}
+    
+    .main-footer .newsletter-container form.newsletter-form .email-container input:focus {}
+    
+    .main-footer .newsletter-container form.newsletter-form div.suscribe-container {}
+    
+    .main-footer .newsletter-container form.newsletter-form .suscribe-container input {}
+    
+    /* ----- COPYRIGHT ----- */
+    
+    .main-footer div.copyright-container {}
+    
+    .main-footer .copyright-container p {}
+
+}

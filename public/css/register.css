@@ -1,0 +1,118 @@
+.main-home {
+    text-align: center;
+    padding: 10px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+}
+
+.action-button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px; 
+    padding: 10px;
+}
+
+.icons-container {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons-container i {
+    font-size: 20px; 
+    margin: 0 10px; 
+    cursor: pointer;
+}
+
+
+/* Media query para tablet (hasta 768px) */
+@media (max-width: 768px) {
+    .main-home {
+        padding: 8px;
+    }
+
+    .action-button {
+        font-size: 14px; /* Ajusta según sea necesario */
+        padding: 8px;
+        bottom: 5px; /* Ajusta según sea necesario para la distancia desde la parte inferior */
+        left: 5px; /* Ajusta según sea necesario para la distancia desde la izquierda */
+    }
+
+    .icons-container {
+        top: 50%;
+        transform: translateY(-50%);
+        justify-content: space-between;
+    }
+
+    .icons-container i {
+        font-size: 40px; /* Ajusta según sea necesario */
+        margin: 0 5px; /* Ajusta según sea necesario */
+    }
+}
+
+/* Media query para desktop (hasta 1200px) */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .main-home {
+        padding: 15px;
+    }
+
+    .action-button {
+        font-size: 16px; /* Ajusta según sea necesario */
+        padding: 10px;
+        bottom: 10px; /* Ajusta según sea necesario para la distancia desde la parte inferior */
+        left: 10px; /* Ajusta según sea necesario para la distancia desde la izquierda */
+    }
+
+    .icons-container {
+        top: 50%;
+        transform: translateY(-50%);
+        justify-content: space-between;
+    }
+
+    .icons-container i {
+        font-size: 60px; /* Ajusta según sea necesario */
+        margin: 0 15px; /* Ajusta según sea necesario */
+    }
+}
+
+
+
+
+
+
+<button class="action-button">COMPRAR</button>
+<div class="carousel-arrows left">
+    <i class="fa-solid fa-angle-left"></i>
+  </div>
+  <div class="carousel-arrows right">
+    <i class="fa-solid fa-angle-right"></i>
+  </div>
+<div class="circle">
+<i class="fa-regular fa-circle"></i>
+<i class="fa-solid fa-circle"></i>
+<i class="fa-regular fa-circle"></i>
+</div>
+<div class="icons">
+    <i class="fa-solid fa-truck-fast"></i>
+    <h4>ENVIOS SIN CARGO</h4>
+    <P>Envios en toda CABA y alrededores</P>
+    <i class="fa-solid fa-dollar-sign"></i>
+    <h4>DESCUENTO EXTRA</h4>
+    <P>Pagango tus compras en efectivo</P>
+    <i class="fa-solid fa-credit-card"></i>
+    <h4>PAGA CON TARJETA</h4>
+    <p>Tambien podes pagar en cuotas</p>
+</div>

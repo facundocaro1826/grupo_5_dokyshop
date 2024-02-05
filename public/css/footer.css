@@ -1,0 +1,408 @@
+/* -------- MOBILE VIEW -------- */
+
+.main-footer {
+    font-family: var(--familyOpenSans);
+    font-weight: bold;
+    background-color: var(--amarillo);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-footer .logo-container {
+    margin: 10px auto;
+    width: 100%;
+    height: 100px;
+}
+
+.main-footer .logo-container .logo-link {}
+
+.main-footer .logo-container .logo-link img.logo-footer {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* ----- ENLACES ----- */
+
+.main-footer div.links-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px auto;
+    width: 100%;
+}
+
+.main-footer div.links-container .links-title {
+    text-align: center;
+}
+
+.main-footer div.links-container nav.links-nav {}
+
+.main-footer div.links-container .links-nav ul {
+    text-align: center;
+}
+
+.main-footer div.links-container .links-nav ul li {}
+
+.main-footer div.links-container .links-nav ul li a {}
+
+/* ----- CONTACTO ----- */
+
+.main-footer div.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px auto;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.main-footer .contact-container .contact-title {
+    text-align: center;
+}
+
+.main-footer .contact-container nav.contact-nav {}
+
+.main-footer .contact-container .contact-nav ul {}
+
+.main-footer .contact-container .contact-nav ul li {}
+
+.main-footer .contact-container .contact-nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-footer .contact-container .contact-nav ul li a i {
+    margin: 5px;
+    font-size: 1.5rem;
+}
+
+
+/* ----- REDES SOCIALES ----- */
+
+.main-footer div.socials-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 10px auto;
+    width: 100%;
+}
+
+.main-footer .socials-container .socials-title {
+    text-align: center;
+}
+
+.main-footer .socials-container nav.socials-nav {}
+
+.main-footer .socials-container .socials-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.main-footer .socials-container .socials-nav ul li {
+    border: 8px solid var(--grisOscuro);
+    border-radius: 50%;
+    background-color: var(--grisOscuro);
+    padding: 3px;
+}
+
+.main-footer .socials-container .socials-nav ul li a {
+    padding: 2px;
+}
+
+.main-footer .socials-container .socials-nav ul li a.x {
+    color: var(--blanco);
+}
+.main-footer .socials-container .socials-nav ul li a.facebook {
+    color: var(--azulfb);
+}
+.main-footer .socials-container .socials-nav ul li a.instagram {
+    color: var(--naranjaig);
+}
+.main-footer .socials-container .socials-nav ul li a.tiktok {
+    color: var(--blanco);
+}
+
+.main-footer .socials-container .socials-nav ul li a i {}
+
+/* ----- NEWSLETTER ----- */
+
+.main-footer div.newsletter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px auto;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.main-footer  .newsletter-container form.newsletter-form {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.main-footer .newsletter-container form.newsletter-form div.newsletter-title-container {
+    margin-bottom: 5px;
+}
+
+.main-footer .newsletter-container .newsletter-form .newsletter-title-container .newsletter-title {}
+
+.main-footer .newsletter-container .newsletter-form div.email-container {
+}
+
+.main-footer .newsletter-container form.newsletter-form .email-container input {
+    border: 3px solid var(--marronclaro);
+    border-radius: 10px;
+    background-color: var(--marronclaro);
+    font-family: var(--familyOpenSans);
+    font-weight: bold;
+}
+
+.main-footer .newsletter-container form.newsletter-form .email-container input::placeholder {
+    color:var(--negro);
+    padding-left: 20px;
+    font-family: var(--familyOpenSans);
+    font-weight: bold;
+    outline: none;
+}
+.main-footer .newsletter-container form.newsletter-form .email-container input:focus {
+    outline: none;
+}
+.main-footer .newsletter-container form.newsletter-form div.suscribe-container {
+    padding: 10px 10px;
+}
+
+.main-footer .newsletter-container form.newsletter-form .suscribe-container button {
+    border: 5px solid var(--negro);
+    border-radius: 20px;
+    background-color: var(--negro);
+    color: var(--amarillo);
+    font-family: var(--familyOpenSans);
+    font-weight: bold;
+}
+
+/* ----- COPYRIGHT ----- */
+
+.main-footer div.copyright-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px auto;
+    width: 100%;
+}
+
+.main-footer .copyright-container p {
+    text-align: center;
+    font-size: 13px;
+}
+
+/* -------- TABLET VIEW -------- */
+
+@media (min-width: 426px) {
+    .main-footer {}
+
+    .main-footer .logo-container {
+        width: auto;
+    }
+    .main-footer .logo-container .logo-link {}
+
+    .main-footer .logo-container .logo-link img.logo-footer {}
+    
+    /* ----- ENLACES ----- */
+    
+    .main-footer div.links-container {
+        width: auto;
+    }
+    
+    .main-footer div.links-container .links-title {}
+    
+    .main-footer div.links-container nav.links-nav {}
+    
+    .main-footer div.links-container .links-nav ul {}
+    
+    .main-footer div.links-container .links-nav ul li {}
+    
+    .main-footer div.links-container .links-nav ul li a {}
+    
+    /* ----- CONTACTO ----- */
+    
+    .main-footer div.contact-container {
+        width: auto;
+    }
+    
+    .main-footer .contact-container .contact-title {}
+    
+    .main-footer .contact-container nav.contact-nav {}
+    
+    .main-footer .contact-container .contact-nav ul {}
+    
+    .main-footer .contact-container .contact-nav ul li {}
+    
+    .main-footer .contact-container .contact-nav ul li a {}
+    
+    .main-footer .contact-container .contact-nav ul li a i {}
+    
+    
+    /* ----- REDES SOCIALES ----- */
+    
+    .main-footer div.socials-container {
+        width: auto;
+    }
+    
+    .main-footer .socials-container .socials-title {}
+    
+    .main-footer .socials-container nav.socials-nav {}
+    
+    .main-footer .socials-container .socials-nav ul {}
+    
+    .main-footer .socials-container .socials-nav ul li {}
+    
+    .main-footer .socials-container .socials-nav ul li a {}
+    
+    .main-footer .socials-container .socials-nav ul li a i {}
+    
+    /* ----- NEWSLETTER ----- */
+    
+    .main-footer div.newsletter-container {
+        width: auto;
+    }
+    
+    .main-footer  .newsletter-container form.newsletter-form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main-footer .newsletter-container form.newsletter-form div.newsletter-title-container {
+        width: 100%;
+    }
+    
+    .main-footer .newsletter-container .newsletter-form .newsletter-title-container .newsletter-title {}
+    
+    .main-footer .newsletter-container .newsletter-form div.email-container {
+        width: 50%;
+    }
+    
+    .main-footer .newsletter-container form.newsletter-form .email-container input {}
+
+    .main-footer .newsletter-container form.newsletter-form .email-container input::placeholder {}
+
+    .main-footer .newsletter-container form.newsletter-form .email-container input:focus {}
+    
+    .main-footer .newsletter-container form.newsletter-form div.suscribe-container {
+        width: 30%;
+        padding: 0;
+    }
+    
+    .main-footer .newsletter-container form.newsletter-form .suscribe-container input {}
+    
+    /* ----- COPYRIGHT ----- */
+    
+    .main-footer div.copyright-container {}
+    
+    .main-footer .copyright-container p {
+        text-align: left;
+        margin: 0 15px;
+    }
+
+}
+
+/* -------- DESKTOP VIEW -------- */
+
+
+@media (min-width: 769px) {
+    .main-footer {}
+
+    .main-footer .logo-container {}
+
+    .main-footer .logo-container .logo-link {}
+
+    .main-footer .logo-container .logo-link img.logo-footer {}
+    
+    /* ----- ENLACES ----- */
+    
+    .main-footer div.links-container {}
+    
+    .main-footer div.links-container .links-title {}
+    
+    .main-footer div.links-container nav.links-nav {}
+    
+    .main-footer div.links-container .links-nav ul {}
+    
+    .main-footer div.links-container .links-nav ul li {}
+    
+    .main-footer div.links-container .links-nav ul li a {}
+    
+    /* ----- CONTACTO ----- */
+    
+    .main-footer div.contact-container {}
+    
+    .main-footer .contact-container .contact-title {}
+    
+    .main-footer .contact-container nav.contact-nav {}
+    
+    .main-footer .contact-container .contact-nav ul {}
+    
+    .main-footer .contact-container .contact-nav ul li {}
+    
+    .main-footer .contact-container .contact-nav ul li a {}
+    
+    .main-footer .contact-container .contact-nav ul li a i {}
+    
+    
+    /* ----- REDES SOCIALES ----- */
+    
+    .main-footer div.socials-container {}
+    
+    .main-footer .socials-container .socials-title {}
+    
+    .main-footer .socials-container nav.socials-nav {}
+    
+    .main-footer .socials-container .socials-nav ul {}
+    
+    .main-footer .socials-container .socials-nav ul li {}
+    
+    .main-footer .socials-container .socials-nav ul li a {}
+    
+    .main-footer .socials-container .socials-nav ul li a i {}
+    
+    /* ----- NEWSLETTER ----- */
+    
+    .main-footer div.newsletter-container {}
+    
+    .main-footer  .newsletter-container form.newsletter-form {}
+    
+    .main-footer .newsletter-container form.newsletter-form div.newsletter-title-container {}
+    
+    .main-footer .newsletter-container .newsletter-form .newsletter-title-container .newsletter-title {}
+    
+    .main-footer .newsletter-container .newsletter-form div.email-container {}
+    
+    .main-footer .newsletter-container form.newsletter-form .email-container input {}
+
+    .main-footer .newsletter-container form.newsletter-form .email-container input::placeholder {}
+    
+    .main-footer .newsletter-container form.newsletter-form .email-container input:focus {}
+    
+    .main-footer .newsletter-container form.newsletter-form div.suscribe-container {}
+    
+    .main-footer .newsletter-container form.newsletter-form .suscribe-container input {}
+    
+    /* ----- COPYRIGHT ----- */
+    
+    .main-footer div.copyright-container {}
+    
+    .main-footer .copyright-container p {}
+
+}
