@@ -283,6 +283,35 @@ product-contenedor {
     margin-right: 5px;
 }
 
+/* Vista móvil */
+@media (max-width: 425px) {
+    .product {
+        width: 100%; /* O el ancho deseado para la vista móvil */
+    }
+}
+
+/* Vista de tablet y desktop */
+@media (min-width: 426px) {
+    .container-products {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .product {
+        width: 30%; /* O el ancho deseado para la vista de tablet y escritorio */
+    }
+     .carousel-inner {
+        max-height: 600px; /* Ajusta la altura máxima según sea necesario */
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+        object-fit: cover; /* O el estilo que desees, puede ser contain en lugar de cover */
+    }
+}
 
 
 /* -------- MOBILE VIEW -------- */
