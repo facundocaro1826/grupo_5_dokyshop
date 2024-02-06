@@ -267,8 +267,7 @@ main.register-main form.form-principal .contenedor-button a.inicio-session{}
 @media (min-width: 1024px) {
    
         body{
-        
-height: auto;
+        height: auto;
         }
     
     main.register-main{
