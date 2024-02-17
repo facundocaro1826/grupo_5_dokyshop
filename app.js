@@ -9,6 +9,9 @@ app.use(express.static('public'));
 /* routes */
 const createPath = (filename) => path.join(__dirname, `./views/${filename}.html`);
 
+
+/* middleware */ 
+
 app.get('/', (req, res)=>{
     res.sendFile(createPath('index'))  //home => Florencia
 })
