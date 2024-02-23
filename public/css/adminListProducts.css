@@ -1,0 +1,122 @@
+.dashboard-content {
+    padding: 3rem;
+}
+
+.dashboard-content h1 {
+    text-align: center;
+    /* padding-bottom: 20px; */
+    color: var(--amarillo);
+    font-weight: 1000;
+    letter-spacing: 1px;
+}
+
+/* BUSCADOR DE PRODUCTOS */
+
+.dashboard-content .dash-topbar {display: flex;flex-wrap: wrap;justify-content: space-between;margin: 20px 0;padding: 20px 0;}
+
+.dashboard-content .dash-topbar form {background-color: var(--amarillo);padding: 10px;border-radius: 20px;font-weight: bold;width: 50%;display: flex;flex-wrap: wrap;align-items: center;justify-content: center;align-content: center;}
+
+.dashboard-content .dash-topbar form label {
+}
+
+.dashboard-content .dash-topbar form input {width: 90%;border: none;outline: none;background-color: var(--amarillo);font-weight: bold;font-size: 1rem;}
+
+.dashboard-content .dash-topbar form button {background-color: var(--amarillo);border: none;font-size: 1.1rem;}
+
+.dashboard-content .dash-topbar form button i {}
+
+/* CREAR PRODUCTO */
+.dashboard-content .dash-topbar .dash-addProduct-container {
+    background-color: var(--amarillo);
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.dashboard-content .dash-topbar .dash-addProduct-container .dash-addProduct {
+}
+
+.dashboard-content .dash-topbar .dash-addProduct-container .dash-addProduct span {
+    color: var(--gris);
+}
+
+.dashboard-content .dash-topbar .dash-addProduct-container .dash-plusButton {
+    color: var(--grisOscuro);
+}
+
+/* TABLA LISTA DE PRODUCTOS */
+
+.dashboard-content .listProduct-table {
+    border-collapse: collapse;
+    max-width: 1200px;
+}
+
+.dashboard-content .listProduct-table thead {
+    text-align: center;
+    border-bottom: 1px solid var(--gris);
+}
+
+.dashboard-content .listProduct-table thead tr {}
+
+.dashboard-content .listProduct-table thead tr th {
+    padding: 0.5rem;
+    color: var(--gris);
+}
+
+.dashboard-content .listProduct-table tbody {
+    text-align: center;
+    border-bottom: 1px solid var(--gris);
+}
+
+.dashboard-content .listProduct-table tbody tr {border-bottom: 1px solid var(--gris);}
+
+.dashboard-content .listProduct-table tbody tr th {
+}
+
+.dashboard-content .listProduct-table tbody tr td {
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+.dashboard-content .listProduct-table tbody tr td .dash-img-product{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.dashboard-content .listProduct-table tbody tr td.td-price {
+    color: var(--amarillo);
+}
+.dashboard-content .listProduct-table tbody tr td.td-stock {
+    color: var(--verde);
+}
+
+.dashboard-content .listProduct-table tbody tr td.td-description {
+    max-width: 1200px;
+    font-size: calc(0.53rem + 0.4vw);
+}
+
+.dashboard-content .listProduct-table tbody tr td .dash-actionButtons {
+    display: flex;
+    gap: 0 10px;
+    font-weight: bold;
+}
+
+.dashboard-content .listProduct-table tbody tr td .dash-actionButtons .infoButton {
+    padding: 5px 15px;
+    background-color: var(--azulfb);
+    color: var(--blanco);
+    border-radius: 10%;
+}
+
+.dashboard-content .listProduct-table tbody tr td .dash-actionButtons .editButton {
+    padding: 5px 15px;
+    border-radius: 10%;
+    background-color: var(--marron);
+}
+
+.dashboard-content .listProduct-table tbody tr td .dash-actionButtons .deleteButton {
+    padding: 5px 15px;
+    border-radius: 10%;
+    background-color: var(--naranjaig);
+}
