@@ -6,16 +6,31 @@
 - Despejar dudas
 - Realizar tareas
 
-## 
+## Keep doing- Seguir haciendo:
+- Mantener la comunicacion
+- Reunirse
+- Actualizar trabajo
+- Ayudarse mutuamente
 
 
-## Seguir haciendo.
-- 
+## Less of- Menos de:
+- No reunirse
+- No responder
+- No informar las dificultades
+- Atrasarse
 
-## Hacer menos.
-- 
+## Start doing- Empezar a hacer:
+- Ser honmesto y responsable
+- Priorizar el trabajo grupal
+- Poner reglas
+- Participar más
 
-## Dejar de hacer.
-- 
+## Stop doing- Dejar de hacer:
+- Procastinar
+- No avisar a tiempo
+- No comunicarse
+- No realizar tareas
+
+
 
 ![estrellaRetro-2.jpg](/retrospective/estrellaRetro-2.jpg)

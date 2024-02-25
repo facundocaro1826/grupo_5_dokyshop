@@ -1,5 +1,5 @@
 
-# DAILY - 22/02
+# DAILY 1- 22/02
 
 ## Adriana:
 - que hice ayer-:
@@ -60,3 +60,7 @@ Encontré como impedimento falta de tiempo para sentarme a practicar, y realizar
 Armar la Daly en base a lo que hablamos hoy.
 Hacer lo de las retrospectivas, corregir las incidencias del sprint 1 y armar la del 2
 Tratar de terminar de ver lo del proyecto, para poder armar los partials.
+
+# DAILY 2- 25/02
+- 
+
