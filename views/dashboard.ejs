@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Venta de accesorios, vestimenta y juguetes para mascotas">
-    
+
     <!-- SHARED REDES -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Dokyshop">
@@ -51,7 +51,7 @@
                 <li>
                     <a href="">
                         <i class="fa-solid fa-cart-shopping"></i>
-                        <span>Pedidos</span>
+                        <span>Ventas</span>
                     </a>
                 </li>
                 <li>
@@ -89,12 +89,22 @@
                     <input type="text" placeholder="Buscar Producto" name="dash-search" id="dash-search" value="">
                     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
+
+                <div class="dash-filter">
+                    <div><span>Mostrar:</span></div>
+                    <select name="filterSelect" id="filterSelect">
+                        <option value="Todos los productos">Todos los productos</option>
+                        <option value="Indumentaria">Indumentaria</option>
+                        <option value="Accesorios">Accesorios</option>
+                        <option value="Juguetes">Juguetes</option>
+                    </select>
+                </div>
+               
                 <div class="dash-addProduct-container">
                     <a class="dash-addProduct" href="/admin/crear-producto">
                         <span>Crear producto</span>
                         <i class="dash-plusButton fa-solid fa-plus"></i>
                     </a>
-                    
                 </div>
             </div>
 
@@ -107,6 +117,7 @@
                         <th scope="col">Categoría</th>
                         <th scope="col">Descripción</th>
                         <th scope="col">Precio</th>
+                        <th scope="col">Descuento</th>
                         <th scope="col">Stock</th>
                         <th scope="col">Colores</th>
                         <th scope="col">Acciones</th>
@@ -120,8 +131,13 @@
                         <td>Juguetes</td>
                         <td class="td-description">Juguete interactivo que previene la depresión en gatos. Set de 3 ratoncitos en felpa de colores surtidos, con chifle para que el Gato Salte, Olfatee, Sienta, Juegue y ademas no pare de correr ,disfruta jugando con tu gato a atrapar y a correr. Para todo tipo de gatos.</td>
                         <td class="td-price">1000</td>
-                        <td class="td-stock"></td>
+                        <td class="td-sale">20</td>
                         <td class="td-stock">1</td>
+                        <td class="td-colors">
+                            <i style="color: orange;" class="fa-solid fa-circle"></i>
+                            <i style="color: red;" class="fa-solid fa-circle"></i>
+                            <i style="color: black" class="fa-solid fa-circle"></i>
+                        </td>
                         <td>
                             <div class="dash-actionButtons" role="group">
                                 <a class="infoButton" href="">Info</a>
@@ -130,6 +146,73 @@
                             </div>
                         </td>
                     </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td><img class="dash-img-product" src="/images/products/ratita-01.jpg" alt="product image"></td>
+                        <td>Ratita Piel Con Cola Color x 3 Unidades</td>
+                        <td>Juguetes</td>
+                        <td class="td-description">Juguete interactivo que previene la depresión en gatos. Set de 3 ratoncitos en felpa de colores surtidos, con chifle para que el Gato Salte, Olfatee, Sienta, Juegue y ademas no pare de correr ,disfruta jugando con tu gato a atrapar y a correr. Para todo tipo de gatos.</td>
+                        <td class="td-price">1000</td>
+                        <td class="td-sale">20</td>
+                        <td class="td-stock">1</td>
+                        <td class="td-colors">
+                            <i style="color: orange;" class="fa-solid fa-circle"></i>
+                            <i style="color: red;" class="fa-solid fa-circle"></i>
+                            <i style="color: black" class="fa-solid fa-circle"></i>
+                        </td>
+                        <td>
+                            <div class="dash-actionButtons" role="group">
+                                <a class="infoButton" href="">Info</a>
+                                <a class="editButton" href="/admin/editar-producto">Editar</a>
+                                <a class="deleteButton" href="">Eliminar</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td><img class="dash-img-product" src="/images/products/ratita-01.jpg" alt="product image"></td>
+                        <td>Ratita Piel Con Cola Color x 3 Unidades</td>
+                        <td>Juguetes</td>
+                        <td class="td-description">Juguete interactivo que previene la depresión en gatos. Set de 3 ratoncitos en felpa de colores surtidos, con chifle para que el Gato Salte, Olfatee, Sienta, Juegue y ademas no pare de correr ,disfruta jugando con tu gato a atrapar y a correr. Para todo tipo de gatos.</td>
+                        <td class="td-price">1000</td>
+                        <td class="td-sale">20</td>
+                        <td class="td-stock">1</td>
+                        <td class="td-colors">
+                            <i style="color: orange;" class="fa-solid fa-circle"></i>
+                            <i style="color: red;" class="fa-solid fa-circle"></i>
+                            <i style="color: black" class="fa-solid fa-circle"></i>
+                        </td>
+                        <td>
+                            <div class="dash-actionButtons" role="group">
+                                <a class="infoButton" href="">Info</a>
+                                <a class="editButton" href="/admin/editar-producto">Editar</a>
+                                <a class="deleteButton" href="">Eliminar</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td><img class="dash-img-product" src="/images/products/ratita-01.jpg" alt="product image"></td>
+                        <td>Ratita Piel Con Cola Color x 3 Unidades</td>
+                        <td>Juguetes</td>
+                        <td class="td-description">Juguete interactivo que previene la depresión en gatos. Set de 3 ratoncitos en felpa de colores surtidos, con chifle para que el Gato Salte, Olfatee, Sienta, Juegue y ademas no pare de correr ,disfruta jugando con tu gato a atrapar y a correr. Para todo tipo de gatos.</td>
+                        <td class="td-price">1000</td>
+                        <td class="td-sale">20</td>
+                        <td class="td-stock">1</td>
+                        <td class="td-colors">
+                            <i style="color: orange;" class="fa-solid fa-circle"></i>
+                            <i style="color: red;" class="fa-solid fa-circle"></i>
+                            <i style="color: black" class="fa-solid fa-circle"></i>
+                        </td>
+                        <td>
+                            <div class="dash-actionButtons" role="group">
+                                <a class="infoButton" href="">Info</a>
+                                <a class="editButton" href="/admin/editar-producto">Editar</a>
+                                <a class="deleteButton" href="">Eliminar</a>
+                            </div>
+                        </td>
+                    </tr>
+                               
                 </tbody>
 
         

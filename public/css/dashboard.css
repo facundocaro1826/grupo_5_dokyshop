@@ -8,7 +8,7 @@
     flex-direction: column;
     align-items: center;
     padding: 0 30px;
-    height: 1100px;
+    height: 100vh;
 }
 
 .main-dashboard .dashboard-panel .dash-logo-container {
@@ -23,19 +23,43 @@
     height: 100%;
 }
 
-.main-dashboard .dashboard-panel .dash-ul {display: flex;flex-direction: column;gap: 20px;}
+.main-dashboard .dashboard-panel .dash-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 .main-dashboard .dashboard-panel .dash-ul li {
     padding: 5px;
     font-size: calc(0.53rem + 0.6vw);
+    transition: all 0.5s;
 }
 
-.main-dashboard .dashboard-panel .dash-ul li a {width: 100%;display: flex;align-items: center;flex-wrap: wrap;}
+.main-dashboard .dashboard-panel .dash-ul li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+
+.main-dashboard .dashboard-panel .dash-ul li a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-dashboard .dashboard-panel .dash-ul li a:hover i {
+    rotate: 60deg ;
+}
 
 .main-dashboard .dashboard-panel .dash-ul li a i {
     padding: 0 10px;
+    transition: all 0.7s;
 }
 
 .main-dashboard .dashboard-panel .dash-ul li a span {
     font-weight: bold;
+}
+
+.main-dashboard .dashboard-panel .dash-ul li a span:hover {
+    
 }
