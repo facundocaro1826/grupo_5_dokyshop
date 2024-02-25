@@ -1,7 +1,8 @@
 # RETROSPECTIVA 1
 
 ## Empezar a hacer.
-- Ser honesto
+- Ser honesto en cuanto al
+
 - Participar más
 - Establecer pautas de reuniones
 
@@ -20,4 +21,4 @@
 - Subestimar los tiempos
 
 
-![estrellaRetro-1.png](/retrospective/estrellaRetro-1.jpg)
+![estrellaRetro-1.png](/retrospective/estrellaRetro-1.jpeg)
