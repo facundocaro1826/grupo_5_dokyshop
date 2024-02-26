@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Venta de accesorios, vestimenta y juguetes para mascotas">
+    
+    <!-- SHARED REDES -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Dokyshop">
+    <meta property="og:description" content="Venta de accesorios, vestimenta y juguetes para mascotas">
+    <meta property="og:image" content="/images/icon/logo.png">
+    <meta property="og:url" content="http://localhost:3030">
+
+    <link rel="icon" href="/images/icon/logo.ico" type="image/x-icon">
+
+    <!-- HAMBURGERS CSS -->
+    <link rel="stylesheet" href="/css/library/hamburgers.min.css">
+
+    <!-- GLIDER CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/library/glider.min.css">
+
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Dokyshop - Detalle de producto</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="top-bar">
+            <span class="free-ship">ENVIOS GRATIS A PARTIR DE $25.000</span>
+            <button class="burger-menu hamburger hamburger--spin" type="button">
+                <span class="burger-container hamburger-box">
+                  <span class="burger hamburger-inner"></span>
+                </span>
+            </button>
+            <div class="logo-container">
+                <a href="/"><img src="/images/icon/logo.png" alt="logo"></a>
+            </div>
+            <div class="search-bar">
+                <form class="search-form" action="/search" method="post">
+                    <label for="search"></label>
+                    <input type="text" name="search" id="search" value="" placeholder="¿Que estas buscando?">
+                    <button type="submit" class="search-icon">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <nav class="user-nav" id="user-nav">
+                <ul class="user-list">
+                    <li><a href="/autenticacion/iniciar">Iniciar sesión</a></li>
+                    <li><span class="separator">|</span></li>
+                    <li><a href="/autenticacion/registro">Registrate</a></li>
+                </ul>
+            </nav>
+            <div class="buy-cart-container">
+                <a class="buy-cart" href="/carrito-compra-compra"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+        
+        <nav class="main-nav" id="navigation">
+            <ul class="main-list">
+                <li class="list-index"><a class="a-index" href="/">INICIO</a></li>
+                <li class="list-products"><a class="a-products" href="productos">PRODUCTOS</a></li>  
+                <li class="list-contact"><a class="a-contact" href="/#footer">CONTACTO</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="productDetail">
+        <div class="thumbnails-container">
+            <figure class="thumb-img-container"><img class="thumb-img" src="/images/products/ratita-02.jpg" alt="producto 1"></figure>
+            <figure class="thumb-img-container"><img class="thumb-img" src="/images/products/ratita-03.jpg" alt="producto 1"></figure>
+            <figure class="thumb-img-container"><img class="thumb-img" src="/images/products/ratita-04.jpg" alt="producto 1"></figure>
+        </div>
+        
+        <div class="glider-contain prodDetail-glider-container">
+            <div class="glider prodDetail-glider">
+              <div class="prodDetail-content-container">
+                <figure class="prodDetail-image-container">
+                    <img src="/images/products/ratita-01.jpg" alt="producto 1">
+                </figure>
+              </div>
+    
+              <div class="prodDetail-content-container">
+                <figure class="prodDetail-image-container">
+                    <img src="/images/products/ratita-02.jpg" alt="producto 1">
+                </figure>
+              </div>
+
+              <div class="prodDetail-content-container">
+                <figure class="prodDetail-image-container">
+                    <img src="/images/products/ratita-03.jpg" alt="producto 1">
+                </figure>
+              </div>
+
+              <div class="prodDetail-content-container">
+                <figure class="prodDetail-image-container">
+                    <img src="/images/products/ratita-04.jpg" alt="producto 1">
+                </figure>
+              </div>
+            </div>
+          
+            <button aria-label="Previous" class="glider-prev">
+                <i class="fa-solid fa-caret-left"></i>
+            </button>
+            <button aria-label="Next" class="glider-next">
+                <i class="fa-solid fa-caret-right"></i>
+            </button>
+            <div role="tablist" class="dots"></div>
+        </div>
+        <div class="prodDetail-container">
+            <div class="breadcrumb-container">
+                <nav class="breadcrum">
+                    <ul>
+                        <li>
+                            <a href="/">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#">Juguetes</a>
+                        </li>
+                        <li>
+                            <a href="#">Gatos</a>
+                        </li>
+                        <li>
+                            <a href="#">RATITA PIEL CON COLA COLOR X 3 UNIDADES</a>
+                        </li>
+                    </ul>  
+                </nav>
+            </div>
+            <h2 class="prodDetail-title">Ratita Piel Con Cola Color x 3 Unidades</h2>
+            <p class="prodDetail-price">$1.000,00</p>
+            <div class="product-quantity-container">
+                    <button class="decrease-button">-</button>
+                    <div class="quantity">  
+                        <label for="quantity"></label>
+                        <input type="number" name="quantity" id="quantity" value="1" min="1">
+                    </div>
+                    <button class="increase-button">+</button>
+            </div>
+            <div class="add-to-cart">
+                <div class="btn-cart">
+                    <button>AGREGAR AL carrito-compra</button>
+                </div>
+            </div>
+        </div>
+        <div class="description-container">
+            <h2 class="description-title">Descripción del producto</h2>
+            <p class="description-paragraph">Juguete interactivo que previene la depresión en gatos. 
+                Set de 3 ratoncitos en felpa de colores surtidos, con chifle para que el Gato Salte, Olfatee, Sienta, Juegue y ademas no pare de correr ,disfruta jugando con tu gato a atrapar y a correr.
+                Para todo tipo de gatos.
+            </p>
+        </div>
+
+        <div class="relatedProduct-container">
+            <h2 class="relatedProduct-title">Productos relacionados</h2>
+            <article class="relatedProd">
+                <figure class="relatedProd-img-container">
+                    <a href="/productos/detalle">
+                        <img class="relatedProd-img" src="/images/products/relatedProd-01.jpg" alt="related product 1">
+                    </a>
+                </figure>
+                <div class="relatedProd-description">
+                    <a href="/productos/detalle">
+                        <h5>Juguete Para Gato Pelota Con Motor Y Raton</h5>
+                    </a>
+                    <p>$ 9.112,00</p>
+                    <a class="relatedProd-buycart" href="/carrito-compra"><i class="fa-solid fa-cart-plus"></i></a>
+                </div>    
+            </article>
+
+            <article class="relatedProd">
+                <figure class="relatedProd-img-container">
+                    <a href="/productos/detalle">
+                        <img class="relatedProd-img" src="/images/products/relatedProd-02.jpg" alt="related product 2">
+                    </a>
+                </figure>
+                <div class="relatedProd-description">
+                    <a href="/productos/detalle">
+                        <h5>Cartocat Rascador Ondeado</h5>
+                    </a>
+                    <p>$ 4.300,00</p>
+                    <a class="relatedProd-buycart" href="/carrito-compra"><i class="fa-solid fa-cart-plus"></i></a>
+                </div>
+            </article>
+
+            <article class="relatedProd">
+                <figure class="relatedProd-img-container">
+                    <a href="/productos/detalle">
+                        <img class="relatedProd-img" src="/images/products/relatedProd-03.jpg" alt="related product 3">
+                    </a>
+                </figure>
+                <div class="relatedProd-description">
+                    <a class="relatedProd-title-link" href="/productos/detalle">
+                        <h5>Varita Para Gato Spiderman</h5>
+                    </a>
+                    <p>$ 5.000,00</p>
+                    <a class="relatedProd-buycart" href="/carrito-compra"><i class="fa-solid fa-cart-plus"></i></a>
+                </div>
+            </article>
+
+            <article class="relatedProd">
+                <figure class="relatedProd-img-container">
+                    <a href="/productos/detalle">
+                        <img class="relatedProd-img" src="/images/products/relatedProd-04.jpg" alt="related product 4">
+                    </a>
+                </figure>
+                <div class="relatedProd-description">
+                    <a href="/productos/detalle">
+                        <h5>Rascador Para Gatos Dos Niveles Sisal Y Peluche </h5>
+                    </a>
+                    <p>$ 5.000,00</p>
+                    <a class="relatedProd-buycart" href="/carrito-compra"><i class="fa-solid fa-cart-plus"></i></a>
+                </div>
+            </article>
+        </div>
+        
+    </main>
+    <footer class="main-footer">
+        <div class="logo-container">
+            <a class="logo-link" href="/"><img class="logo-footer" src="/images/icon/logo.png" alt="logo"></a>
+        </div>
+        <div class="links-container">
+            <h3 class="links-title">ENLACES</h3>
+            <nav class="links-nav">
+                <ul>
+                    <li><a href="/">inicio</a></li>
+                    <li><a href="">indumentaria</a></li>
+                    <li><a href="">accesorios</a></li>
+                    <li><a href="">juguetes</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="contact-container">
+            <h3 class="contact-title">CONTACTO</h3>
+            <nav class="contact-nav">
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-square-whatsapp"></i>1163230839</a></li>
+                    <li><a href="mailto:dokyshop@gmail.com"><i class="fa-solid fa-envelope"></i>dokyshop@gmail.com</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="socials-container">
+            <h3 class="socials-title">REDES SOCIALES</h3>
+            <nav class="socials-nav">
+                <ul>
+                    <li><a class="x" href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a class="facebook" href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a class="instagram" href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a class="tiktok" href=""><i class="fa-brands fa-tiktok"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="newsletter-container">
+            <form class="newsletter-form" action="/" method="POST">
+                <div class="newsletter-title-container">
+                    <h3 class="newsletter-title">SUSCRIBITE</h3>
+                </div>
+                <div class="text-container">
+                    <p>Recibí nuestras ofertas y novedades exclusivas</p>
+                </div>
+                <div class="email-container">
+                    <input type="email" placeholder="correo electronico" name="email" id="email" value="" autocomplete="on">
+                </div>  
+                <div class="suscribe-container">
+                    <button type="submit">suscribirse</button>
+                </div>
+            </form>
+        </div>
+        <div class="copyright-container">
+            <p>Copyright DOKYSHOP - 2024. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- HAMBURGERS SCRIPT -->
+    <script src="/js/library/hamburgers.js" defer></script>
+
+    <!-- GLIDER SCRIPT -->
+    <script src="/js/library/glider.min.js" defer></script>
+    
+    <!-- GLIDER CONFIG SCRIPT -->
+    <script src="/js/configs/glider.js" defer></script>
+    
+</body>
+</html>
