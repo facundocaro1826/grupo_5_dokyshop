@@ -1,9 +1,11 @@
 # RETROSPECTIVA 1
 
 ## Empezar a hacer.
-- Ser honesto
-- Participar más
-- Establecer pautas de reuniones
+- Ser honesto en cuanto al estado en el que se encuantra cada uno
+con respecto a sus tareas
+- Participar más, sacarse la mayor cantidad de dsuas posibles
+- Establecer pautas de reuniones.
+Es importante poder oirganizar reuninios, no puede faltar la comunicacion.
 
 ## Hacer más.
 - Reunirse mas seguido
@@ -20,4 +22,4 @@
 - Subestimar los tiempos
 
 
-![estrellaRetro-1.png](/retrospective/estrellaRetro-1.jpg)
+![estrellaRetro-1.png](/retrospective/estrellaRetro-1.jpeg)
