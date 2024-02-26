@@ -22,4 +22,4 @@ Es importante poder oirganizar reuninios, no puede faltar la comunicacion.
 - Subestimar los tiempos
 
 
-![estrellaRetro-1.png](/retrospective/estrellaRetro-1.jpeg)
+![estrellaRetro-1.png](/retrospective/estrellaRetro-1.jpg)
