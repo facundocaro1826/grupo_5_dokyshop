@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head',  {view: "Registrate"}) %>
+    <%- include('../partials/head',  {view: "Registrate", bootstrapCSSDisabled:true, gliderCSSDisabled:true}) %>
     <body>
-        <%- include('./partials/header') %>
+        <%- include('../partials/header') %>
         
         <main class="register-main">
             <h1>Formulario de registro</h1>
@@ -43,10 +43,8 @@
             </form>
             
         </main>
-        <%- include('./partials/footer') %>
-        <%- include('./partials/script',{
-            disabledamburgers:true,
-            disabledGlider:true,
-        })%>
+        <%- include('../partials/footer') %>
+
+        <%- include('../partials/scripts', {disabledBootstrapJS:true, disabledGliderJS:true}) %>
     </body>
 </html>

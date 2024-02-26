@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<%- include('./partials/head', {view: "Articulos para mascotas"}) %>
+<%- include('../partials/head', {view: "Articulos para mascotas", gliderCSSDisabled:true}) %>
 
 <body>
-    <%- include('./partials/header') %>
+    <%- include('../partials/header') %>
 
     <main class="main-home">
         <!-- Carrusel -->
@@ -95,7 +95,7 @@
             <article class="recommendedProd">
                 
                 <figure class="recommended-img-container">
-                    <a href="productos/detalle"><img src="/images/products/relatedProd-01.jpg" alt="recommended products"></a>
+                    <a href="/productos/detalle"><img src="/images/products/relatedProd-01.jpg" alt="recommended products"></a>
                 </figure>
                 <div class="recommendedProd-description">
                     <a href="/productos/detalle">
@@ -184,12 +184,9 @@
         
     </main>
 
-    <%- include('./partials/footer') %>
+    <%- include('../partials/footer') %>
 
-    <%- include('./partials/script',{
-        disabledBootstrap:true,
-        disabledHamburgers:true,
-    }) %>
+    <%- include('../partials/scripts', {disabledGliderJS:true}) %>
 
 </body>
 

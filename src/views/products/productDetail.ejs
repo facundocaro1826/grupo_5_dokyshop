@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
-    <%- include('./partials/head',  {view: "Detalle de productos"}) %>
+    <%- include('../partials/head',  {view: "Detalle de productos", bootstrapCSSDisabled:true}) %>
 <body>
-    <%- include('./partials/header') %>
+    <%- include('../partials/header') %>
 
     <main class="productDetail">
         <div class="thumbnails-container">
@@ -153,12 +153,9 @@
         </div>
         
     </main>
-    <%- include('./partials/footer') %>
+    <%- include('../partials/footer') %>
 
-    <%- include('./partials/script',{
-        disabledHamburgers:true,
-        disabledGlider:true,
-    }) %>
+    <%- include('../partials/scripts',{ disabledBootstrapJS:true }) %>
     
 </body>
 </html>

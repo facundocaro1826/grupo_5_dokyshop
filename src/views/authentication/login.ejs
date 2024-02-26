@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-    <%- include('./partials/head',  {view: "Iniciar sesión"}) %>
+<html lang="es">
+    <%- include('../partials/head',  {view: "Iniciar sesión", bootstrapCSSDisabled:true, gliderCSSDisabled:true}) %>
 <body>
-    <%- include('./partials/header') %>
+    <%- include('../partials/header') %>
 
     <main class="login-main">
         <h1 class="titulo-login">Iniciar Sesion </h1>
@@ -38,10 +38,8 @@
         </form>
         
     </main>
-    <%- include('./partials/footer') %>
+    <%- include('../partials/footer') %>
 
-    <%- include('./partials/script',{
-        disabledHamburgers:true,
-    }) %>
+    <%- include('../partials/scripts', {disabledBootstrapJS:true, disabledGliderJS:true}) %>
 </body>
 </html>

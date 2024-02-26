@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head',  {view: "Carrito de compras"}) %>
+    <%- include('../partials/head',  {view: "Carrito de compras", bootstrapCSSDisabled:true, gliderCSSDisabled:true}) %>
 <body>
 
-    <%- include('./partials/header') %>
+    <%- include('../partials/header') %>
     <main class="main-carrito">
         <div class="titulo">
            <h1>Carrito de compras</h1>
@@ -48,10 +48,9 @@
         </div>
     </main>
 
-    <%- include('./partials/footer') %>
-    <%- include('./partials/script',{
-        disabledHamburgers:true,
-    }) %>
+    <%- include('../partials/footer') %>
+
+    <%- include('../partials/scripts', {disabledBootstrapJS:true, disabledGliderJS:true}) %>
 
         
 </body>
