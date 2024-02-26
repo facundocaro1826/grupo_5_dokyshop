@@ -5,10 +5,11 @@
 .main-dashboard .dashboard-panel {
     background-color: var(--amarillo);
     display: flex;
+    height: 100vh;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     padding: 0 30px;
-    height: 100vh;
 }
 
 .main-dashboard .dashboard-panel .dash-logo-container {
@@ -25,8 +26,8 @@
 
 .main-dashboard .dashboard-panel .dash-ul {
     display: flex;
-    flex-direction: column;
     gap: 20px;
+    flex-direction: column;
 }
 
 .main-dashboard .dashboard-panel .dash-ul li {
@@ -42,7 +43,7 @@
 
 .main-dashboard .dashboard-panel .dash-ul li a {
     width: 100%;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     flex-wrap: wrap;
 }

@@ -12,5 +12,6 @@
 @import './productDetail.css';
 @import './dashboard.css';
 @import './adminListProducts.css';
-
+@import './adminCreateProduct.css';
+@import './adminEditProduct.css'
 
