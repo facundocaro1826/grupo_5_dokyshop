@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const partials = require("express-partials")
 var app = express();
+const methodOverride =  require('method-override');
 
 /* routes */
 const otherRoutes = require('./routes/other.routes');
@@ -21,6 +22,7 @@ app.set('view engine', 'ejs');
 /* MIDDLEWARE */
 app.use(partials())
 app.use(express.static('public'));
+app.use(methodOverride('_method'));
 
 
 /* routers */
@@ -30,6 +32,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../public')));
+
 
 app.use("/", otherRoutes);
 app.use("/productos", productRoutes);

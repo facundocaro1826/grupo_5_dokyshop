@@ -35,7 +35,7 @@
     <tr>
       <th scope="col">ID</th>
       <th scope="col">Imagen</th>
-      <th scope="col">Imagenes Secundarias</th>
+      <th scope="col">Imagen Secundarias</th>
       <th scope="col">Nombre</th>
       <th scope="col">Categoría</th>
       <th scope="col">Descripción</th>
@@ -46,58 +46,40 @@
       <th scope="col">Acciones</th>
     </tr>
   </thead>
-  <tbody>
-    <% products.forEach(p => { %>
-      <tr>
-        <th scope="row"><%= p.id %></th>
-        <td>
-          <img
-            class="dash-img-product"
-            src="/images/products/<%= p.image %>"
-            alt="product image"
-          />
-        </td>
-        <td class="dash-imgSecondary-container">
-          <img
-            class="dash-imgSecondary-product"
-            src="/images/products/ratita-02.jpg"
-            alt="product image"
-          />
-          <img
-            class="dash-imgSecondary-product"
-            src="/images/products/ratita-03.jpg"
-            alt="product image"
-          />
-          <img
-            class="dash-imgSecondary-product"
-            src="/images/products/ratita-04.jpg"
-            alt="product image"
-          />
-        </td>
-        <td>Ratita Piel Con Cola Color x 3 Unidades</td>
-        <td>Juguetes</td>
-        <td class="td-description">
-          Juguete interactivo que previene la depresión en gatos. Set de 3
-          ratoncitos en felpa de colores surtidos, con chifle para que el Gato
-          Salte, Olfatee, Sienta, Juegue y ademas no pare de correr ,disfruta
-          jugando con tu gato a atrapar y a correr. Para todo tipo de gatos.
-        </td>
-        <td class="td-price">1000</td>
-        <td class="td-sale">20</td>
-        <td class="td-stock">1</td>
-        <td class="td-colors">
-          <i style="color: orange" class="fa-solid fa-circle"></i>
-          <i style="color: red" class="fa-solid fa-circle"></i>
-          <i style="color: black" class="fa-solid fa-circle"></i>
-        </td>
-        <td>
-          <div class="dash-actionButtons" role="group">
-            <a class="infoButton" href="">Info</a>
-            <a class="editButton" href="/admin/editar-producto">Editar</a>
-            <a class="deleteButton" href="">Eliminar</a>
-          </div>
-        </td>
-      </tr>
-    <% }) %>
+   <tbody>
+  <% product.forEach(p => { %>
+   
+    <tr>
+      <th scope="row"><%=p.id%></th>
+      <td><img class="dash-img-product" src="/images/products/<%= p.imagePrimary %>" alt="product image"/></td>
+      
+      <td>
+         <% p.imagesSecondary.forEach(img => { %>
+      <img class="dash-img-product" src="/images/products/<%= img %>" alt="product image"/>
+      <% }) %>
+    </td>
+      
+      
+      <td><%= p.title %></td>
+      <td><%= p.categorySelect %></td>
+      <td class="td-description"><%= p.description %></td>
+      <td class="td-price"><%= p.price %></td>
+      <td class="td-sale"><%= p.sale %></td>
+      <td class="td-stock"><%= p.stock %></td>
+      <td class="td-colors">
+        <i style="color: orange" class="fa-solid fa-circle"></i>
+        <i style="color: red" class="fa-solid fa-circle"></i>
+        <i style="color: black" class="fa-solid fa-circle"></i>
+      </td>
+      <td>
+        <div class="dash-actionButtons" role="group">
+          <a class="infoButton" href="">Info</a>
+          <a class="editButton" href="/admin/editar-producto/">Editar</a>
+          <a class="deleteButton" href="/admin/eliminar?id=<%= p.id %>&title=<%= p.title %>">Eliminar</a>
+        </div>
+      </td>
+    </tr>
+   <% }) %> 
   </tbody>
+  
 </table>
