@@ -1,8 +1,6 @@
 .createProductForm-container {
     background-color: var(--amarillo);
-    /* margin: auto; */
-    /* padding: 20px 0; */
-    width: 85%;
+    width: 100vw;
     max-width: 1200px;
 }
 
@@ -19,15 +17,21 @@
 
 .createProductForm-container .createProductForm .imgProductForm {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .createProductForm-container .createProductForm .imgProductForm label {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .createProductForm-container .createProductForm .imgProductForm label img {
-    width: 200px;
-    height: 200px;
-    object-fit: contain
+    width: 20vw;
+    height: 15vh;
+    object-fit: contain;
 }
 
 

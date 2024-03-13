@@ -11,23 +11,37 @@
 
   <div class="createProductForm-container container-fluid my-5 card">
     <form class="createProductForm" action="/admin/productos" method="post">
-      <div class="imgProductForm col-5 my-3 px-5">
-        <label for="productImg" class="form-label col-7"
-          >Imagen
-          <img src="/images/other/no-image.png" alt="default product img" />
-        </label>
-        <input
-          type="file"
-          class="form-control form-control-sm"
-          name="productImg"
-          id="productImg"
-          accept=".jpg, .png"
-        />
+      <div class="col-6">
+        <div class="imgProductForm col-12 my-5 px-5">
+          <label for="productImg" class="form-label col-7"
+            >Imagen principal 
+            <img src="/images/other/no-image.png" alt="default product img" />
+          </label>
+          <input
+            type="file"
+            class="form-control form-control-sm"
+            name="productImg"
+            id="productImg"
+            accept="img/*"
+          />
+        </div>
+        <div class="imgProductForm col-12 my-5 px-5">
+          <label for="productImg" class="form-label col-7"
+            >Imagenes Secundarias
+          </label>
+          <input
+            type="file"
+            class="form-control form-control-sm"
+            name="productImg"
+            id="productImg"
+            accept="img/*"
+          />
+        </div>
       </div>
       <div class="createProductForm-options col-6">
         <div class="createProductForm-title col-6 my-3">
           <label for="title" class="form-label"
-            >Titulo <span class="text-danger">*</span></label
+            >Nombre <span class="text-danger">*</span></label
           >
           <input
             type="text"

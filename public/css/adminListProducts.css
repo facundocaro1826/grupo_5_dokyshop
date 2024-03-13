@@ -1,5 +1,6 @@
 .dashboard-content {
-    padding: 3rem;
+    padding: 1rem;
+    margin: 0 auto;
 }
 
 .dashboard-content h1 {
@@ -117,7 +118,7 @@
 
 .dashboard-content .listProduct-table {
     border-collapse: collapse;
-    max-width: 1200px;
+    max-width: 100vw;
     height: 71vh;
     overflow-y: scroll;
     display: block;
@@ -164,6 +165,22 @@
 .dashboard-content .listProduct-table tbody tr td .dash-img-product{
     width: 100px;
     height: 100px;
+    object-fit: contain;
+}
+
+.dashboard-content .listProduct-table tbody tr td.dash-imgSecondary-container {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.dashboard-content .listProduct-table tbody tr td.dash-imgSecondary-container .dash-imgSecondary-product{
+    width: 90px;
+    height: 80px;
     object-fit: contain;
 }
 
