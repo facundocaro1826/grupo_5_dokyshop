@@ -5,4 +5,5 @@ module.exports = (req, res) => {
             contentView
         })
     })
+   
 };

@@ -1,0 +1,101 @@
+[
+   {
+      "id": 1,
+      "title": "Juguete Para Perro Kong Squeezz Hueso Medium C/Sonajero",
+      "categorySelect": "Juguetes",
+      "description": "Kong Squeezz Hueso Medium C/Sonajero es un juguete dentalque que le ayudará a mantener limpios los dientes, sino que también aliviará el dolor de la dentición, medida Medium con Sonajero.",
+      "price": 5400,
+      "sale": 5,
+      "stock": 15,
+      "color": "Azul",
+      "imagePrimary": "goma.webp",
+      "imagesSecondary": [
+         "goma.webp"
+      ]
+   },
+   {
+      "id": 2,
+      "title": "Ratitas x 3",
+      "categorySelect": "Juguetes",
+      "description": "Ratitas de goma para el entretenimiento de nuestra mascota, en variaos colores a elección.-",
+      "price": 5000,
+      "sale": 5,
+      "stock": 20,
+      "color": "rojo, negro, azul",
+      "imagePrimary": "imagePrimary-1710302039305.jpg",
+      "imagesSecondary": [
+         "imagesSecondary-1710302039306.jpg",
+         "imagesSecondary-1710302039308.jpg"
+      ]
+   },
+   {
+      "id": 3,
+      "title": "Rascadores",
+      "categorySelect": "Accesorios",
+      "description": "Practico accesorio para nuestra mascota.  Se trata de un instinto que no pueden evitar porque además de afilarse las uñas, rascar es parte del proceso para marcar el territorio. Esto contribuye a la salud mental y emocional de tu gato.-",
+      "price": 15000,
+      "sale": 10,
+      "stock": 30,
+      "color": "negro, gris",
+      "imagePrimary": "imagePrimary-1710302235102.png",
+      "imagesSecondary": [
+         "imagesSecondary-1710302235110.jpeg"
+      ]
+   },
+   {
+      "id": 4,
+      "title": "Paseador",
+      "categorySelect": "Accesorios",
+      "description": "Practico accesorio y de fácil aplicación, Por una parte, los accesorios reflectantes para nuestras mascotas caninas evitan que el animal se pierda durante los paseos nocturnos, facilitando su visibilidad. Por otro lado, su empleo previene accidentes y atropellos por los coches u otros medios de transporte",
+      "price": 8000,
+      "sale": 5,
+      "stock": 30,
+      "color": "rojo, negro, azul",
+      "imagePrimary": "imagePrimary-1710302519848.webp",
+      "imagesSecondary": [
+         "imagesSecondary-1710302519850.png"
+      ]
+   },
+   {
+      "id": 5,
+      "title": "Indumentaria canina",
+      "categorySelect": "Indumentaria",
+      "description": "Indumentaria de calidad para nuestro perrudos de todo terreno, de raza pequeña a grande, varios modelos y colores, dependiendo también las estaciones del año.",
+      "price": 12000,
+      "sale": 10,
+      "stock": 30,
+      "color": "rojo, negro, azul",
+      "imagePrimary": "imagePrimary-1710302993109.webp",
+      "imagesSecondary": [
+         "imagesSecondary-1710302993110.webp"
+      ]
+   },
+   {
+      "id": 6,
+      "title": "camas",
+      "categorySelect": "Accesorios",
+      "description": "Casa de tela Nº 3 de máxima calidad y algodón. Estructura en placa poliéster de 20 mm, es un lugar ideal para tu mascota para descansar y jugar. Está revestida por una funda de peluche extra suave. El relleno es de goma espuma y base de nylon antideslizante. Medidas: 45 cm frente X 45 cm altura x 55 cm profundidad.\r\nRECOMENDADOS",
+      "price": 35000,
+      "sale": 15,
+      "stock": 15,
+      "color": "rojo, negro, azul",
+      "imagePrimary": "imagePrimary-1710303214272.webp",
+      "imagesSecondary": [
+         "imagesSecondary-1710303214274.webp"
+      ]
+   },
+   {
+      "id": 7,
+      "title": "Transportador",
+      "categorySelect": "Accesorios",
+      "description": "Transportadores de alta calidad y resistentes.  Los transportadores son recomendado en particular para viajes largos. También para las visitas al vet. En esta última es necesario que tu gato se sienta resguardado ante la vulnerabilidad que ellos saben que presentan.",
+      "price": 40000,
+      "sale": 10,
+      "stock": 15,
+      "color": "negro, gris",
+      "imagePrimary": "imagePrimary-1710303693542.webp",
+      "imagesSecondary": [
+         "imagesSecondary-1710303693543.webp"
+      ]
+   }
+]

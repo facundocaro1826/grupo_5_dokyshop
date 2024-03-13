@@ -10,19 +10,14 @@
   </div>
 
   <div class="createProductForm-container container-fluid my-5 card">
-    <form class="createProductForm" action="/admin/productos" method="post">
+    <form class="createProductForm" action="/admin/crear-producto" method="post" enctype="multipart/form-data">
       <div class="imgProductForm col-5 my-3 px-5">
-        <label for="productImg" class="form-label col-7"
-          >Imagen
-          <img src="/images/other/no-image.png" alt="default product img" />
-        </label>
-        <input
-          type="file"
-          class="form-control form-control-sm"
-          name="productImg"
+        <label for="productImg" class="form-label col-7">Imagen</label>
+        <img src="/images/other/no-image.png" alt="" class="form-label col-7">
+        <input type="file" class="form-control form-control-sm"
+          name="imagePrimary"
           id="productImg"
-          accept=".jpg, .png"
-        />
+          />
       </div>
       <div class="createProductForm-options col-6">
         <div class="createProductForm-title col-6 my-3">
@@ -105,8 +100,7 @@
         </div>
         <div class="createProductForm-color col-6 my-3">
           <label for="color" class="form-label"
-            >Color <span class="text-danger">*</span></label
-          >
+            >Color <span class="text-danger">*</span></label>
           <input
             type="text"
             class="form-control form-control-sm border-0 text-center"
@@ -116,10 +110,17 @@
             placeholder="Colores separados por comas"
           />
         </div>
+        
+
+        <div class="col-6 my-3">
+          <div class="mb-4">
+						<label for="formFile" class="form-label">Seleccionar imagenes secundarias</label>
+						<input class="form-control" name="imagesSecondary" type="file" id="formFile" multiple>
+					</div>
+				</div>
         <button
           type="submit"
-          class="createdProd-CreateBtn btn btn-success col-3 my-3 mx-auto"
-        >
+          class="createdProd-CreateBtn btn btn-success col-3 my-3 mx-auto">
           Crear Producto
         </button>
       </div>
