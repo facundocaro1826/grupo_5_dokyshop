@@ -29,18 +29,25 @@ module.exports = (req,res) => {
                 imagesSecondary: newImages.length ? newImages : p.imagesSecondary
             };
             const oldImgPath = path.join(__dirname, "../../../public/images/products/" + p.imagePrimary)
-            if (req.files.imagePrimary?.length) {
-                if (productEdited.imagePrimary === req.files.imagePrimary[0]?.filename) {
-                        fs.unlinkSync(oldImgPath)
+            const existOldImg = fs.existsSync(oldImgPath)
+            if (existOldImg) {
+                if (req.files.imagePrimary?.length) {
+                    if (productEdited.imagePrimary === req.files.imagePrimary[0]?.filename) {
+                            fs.unlinkSync(oldImgPath)
+                    }
                 }
             }
+            
 
             for (let i = 0; i < p.imagesSecondary.length; i++) {
                 let imgSecondary =  p.imagesSecondary[i];
-                const OldImgSecondaryPath = path.join(__dirname, "../../../public/images/products/" + imgSecondary) 
-                if(newImages.length) {
-                    fs.unlinkSync(OldImgSecondaryPath)
-                }
+                let OldImgSecondaryPath = path.join(__dirname, "../../../public/images/products/" + imgSecondary)
+                let existOldSecondaryImg = fs.existsSync(OldImgSecondaryPath)
+                if (existOldSecondaryImg) {
+                    if(newImages.length) {
+                        fs.unlinkSync(OldImgSecondaryPath)
+                    }
+                } 
             }
             return productEdited
         }

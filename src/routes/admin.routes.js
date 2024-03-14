@@ -4,6 +4,7 @@ const adminController = require("../controllers/admin");
 const { uploadProducts } = require("../middleware/uploadFiles")
 // /admin
 router.get("/productos", adminController.list);
+router.get("/productos/buscar", adminController.search)
 
 router.get("/crear-producto", adminController.create);
 router.post("/crear-producto",uploadProducts.fields([
@@ -15,7 +16,7 @@ router.post("/crear-producto",uploadProducts.fields([
 router.get("/editar-producto/:id", adminController.edit);
 router.put("/editar-producto/:id", uploadProducts.fields([
     { name: "imagePrimary", maxCount: 1 },
-    { name: "imagesSecondary", maxCount: 3 }
+    { name: "imagesSecondary", maxCount: 1 }
 ]), adminController.update);  
 
 

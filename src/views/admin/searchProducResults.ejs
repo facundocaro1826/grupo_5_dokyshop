@@ -21,14 +21,18 @@
       <option value="Juguetes">Juguetes</option>
     </select>
   </div>
-
-  <div class="dash-addProduct-container">
-    <a class="dash-addProduct" href="/admin/crear-producto">
-      <span>Crear producto</span>
-      <i class="dash-plusButton fa-solid fa-plus"></i>
-    </a>
-  </div>
 </div>
+
+<div class="col-12 text-center dashSearchTitle">
+    <h2>Resultado de la busqueda: <%= dashboardKeywords %></h2>
+</div>
+<% if (!products.length) { %>
+  <div class="col-12 text-center dashSearchNoResults text-danger">
+    <h3>*No hay productos que coindidan con la búsqueda*</h3>
+  </div>
+
+
+<% } %>
 
 <table class="listProduct-table">
   <thead>
@@ -47,7 +51,7 @@
     </tr>
   </thead>
    <tbody>
-  <% product.forEach(p => { %>
+  <% products.forEach(p => { %>
    
     <tr>
       <th scope="row"><%=p.id%></th>
@@ -79,7 +83,8 @@
         </div>
       </td>
     </tr>
-   <% }) %> 
+   <% }) %>
+
   </tbody>
   
 </table>
