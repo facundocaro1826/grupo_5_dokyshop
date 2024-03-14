@@ -10,19 +10,17 @@
   </div>
 
   <div class="createProductForm-container container-fluid my-5 card">
-    <form class="createProductForm" action="/admin/productos" method="post">
+    <form class="createProductForm" action="/admin/editar-producto/<%= product.id %>?_method=PUT" method="post" enctype="multipart/form-data">
       <div class="col-6">
         <div class="imgProductForm col-12 my-5 px-5">
           <label for="productImg" class="form-label col-7"
             >Imagen principal 
-            <img src="/images/other/no-image.png" alt="default product img" />
+            <img src="/images/products/<%= product.imagePrimary %>" alt="product img" />
           </label>
-          <input
-            type="file"
-            class="form-control form-control-sm"
-            name="productImg"
-            id="productImg"
-            accept="img/*"
+          <input type="file" class="form-control form-control-sm"
+          name="imagePrimary"
+          id="productImg"
+          accept="img/*"
           />
         </div>
         <div class="imgProductForm col-12 my-5 px-5">
@@ -32,23 +30,23 @@
           <input
             type="file"
             class="form-control form-control-sm"
-            name="productImg"
-            id="productImg"
-            accept="img/*"
+            name="imagesSecondary"
+            id="imagesSecondary"
+            accept="img/*" multiple
           />
         </div>
       </div>
       <div class="createProductForm-options col-6">
         <div class="createProductForm-title col-6 my-3">
           <label for="title" class="form-label"
-            >Nombre <span class="text-danger">*</span></label
+            >Titulo <span class="text-danger">*</span></label
           >
           <input
             type="text"
             class="form-control form-control-sm border-0 text-center"
-            name="name"
-            id="name"
-            value="Ratita Piel Con Cola Color x 3 Unidades"
+            name="title"
+            id="title"
+            value="<%= product.title %>"
             placeholder=""
           />
         </div>
@@ -62,9 +60,9 @@
             aria-label="Desplegar las opciones"
             id="categorySelect"
           >
-            <option value="Indumentaria">Indumentaria</option>
-            <option value="Accesorios">Accesorios</option>
-            <option selected value="Juguetes">Juguetes</option>
+            <option <%= product.categorySelect === "Indumentaria" ? "selected" : null %> value="Indumentaria">Indumentaria</option>
+            <option <%= product.categorySelect === "Accesorios" ? "selected" : null %> value="Accesorios">Accesorios</option>
+            <option <%= product.categorySelect === "Juguetes" ? "selected" : null %> value="Juguetes">Juguetes</option>
           </select>
         </div>
         <div class="createProductForm-description col-6 my-3">
@@ -76,8 +74,7 @@
             name="description"
             id="description"
             placeholder="Colocar la descripción del producto"
-          >
-Juguete interactivo que previene la depresión en gatos. Set de 3 ratoncitos en felpa de colores surtidos, con chifle para que el Gato Salte, Olfatee, Sienta, Juegue y ademá  s no pare de correr ,disfruta jugando con tu gato a atrapar y a correr. Para todo tipo de gatos.</textarea
+          ><%= product.description %></textarea
           >
         </div>
         <div class="createProductForm-price col-6 my-3">
@@ -89,7 +86,7 @@ Juguete interactivo que previene la depresión en gatos. Set de 3 ratoncitos en 
             class="form-control form-control-sm border-0 text-center"
             name="price"
             id="price"
-            value="1000"
+            value="<%= product.price %>"
             placeholder=""
           />
         </div>
@@ -102,7 +99,7 @@ Juguete interactivo que previene la depresión en gatos. Set de 3 ratoncitos en 
             class="form-control form-control-sm border-0 text-center"
             name="sale"
             id="sale"
-            value="20"
+            value="<%= product.sale %>"
             placeholder=""
           />
         </div>
@@ -115,7 +112,7 @@ Juguete interactivo que previene la depresión en gatos. Set de 3 ratoncitos en 
             class="form-control form-control-sm border-0 text-center"
             name="stock"
             id="stock"
-            value="1"
+            value="<%= product.stock %>"
             placeholder=""
           />
         </div>
@@ -128,7 +125,7 @@ Juguete interactivo que previene la depresión en gatos. Set de 3 ratoncitos en 
             class="form-control form-control-sm border-0 text-center"
             name="color"
             id="color"
-            value="orange, red, black"
+            value="<%= product.color %>"
             placeholder="Colores separados por comas"
           />
         </div>

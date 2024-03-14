@@ -4,36 +4,31 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const partials = require("express-partials")
-var app = express();
 const methodOverride =  require('method-override');
 
-/* routes */
+var app = express();
+
+/* RUTAS */
 const otherRoutes = require('./routes/other.routes');
 const productRoutes = require('./routes/product.routes');
 const authRoutes = require('./routes/auth.routes');
 const cartRoutes = require('./routes/cart.routes');
 const adminRoutes = require('./routes/admin.routes')
 
-
-/* configs */
-app.set("views", path.join(__dirname, "views"))
+/* CONFIGS */
+app.set("views", path.join(__dirname, "/views"))
 app.set('view engine', 'ejs');
 
 /* MIDDLEWARE */
 app.use(partials())
-app.use(express.static('public'));
-app.use(methodOverride('_method'));
-
-
-/* routers */
-
+app.use(express.static(path.join(__dirname, '../public')));
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(methodOverride('_method'));
 
-
+/* ENRUTADORES */
 app.use("/", otherRoutes);
 app.use("/productos", productRoutes);
 app.use("/autenticacion", authRoutes)

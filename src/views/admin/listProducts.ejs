@@ -36,7 +36,7 @@
       <th scope="col">ID</th>
       <th scope="col">Imagen</th>
       <th scope="col">Imagen Secundarias</th>
-      <th scope="col">Nombre</th>
+      <th scope="col">Titulo</th>
       <th scope="col">Categoría</th>
       <th scope="col">Descripción</th>
       <th scope="col">Precio</th>
@@ -74,7 +74,7 @@
       <td>
         <div class="dash-actionButtons" role="group">
           <a class="infoButton" href="">Info</a>
-          <a class="editButton" href="/admin/editar-producto/">Editar</a>
+          <a class="editButton" href="/admin/editar-producto/<%= p.id %>">Editar</a>
           <a class="deleteButton" href="/admin/eliminar?id=<%= p.id %>&title=<%= p.title %>">Eliminar</a>
         </div>
       </td>

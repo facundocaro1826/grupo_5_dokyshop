@@ -1,7 +1,7 @@
 
 <div class="card w-80 p-4">
 	<div class="card-body">
-	  <h5 class="card-title"><strong>Seguro deceas eliminar este producto :</strong> <%= title %></h5>
+	  <h5 class="card-title"><strong>¿Seguro deseas eliminar este producto? :</strong> <%= title %></h5>
 	  <form action="/admin/eliminar/<%= id %>?_method=DELETE" method="POST">
 		<button type="submit" class="btn btn-danger">ELIMINAR</button>
 	    <a href="/admin/productos" class="btn btn-primary">CANCELAR</a>

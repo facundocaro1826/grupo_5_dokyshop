@@ -2,23 +2,21 @@ const express = require('express');
 const router = express.Router();
 const adminController = require("../controllers/admin");
 const { uploadProducts } = require("../middleware/uploadFiles")
-
-const { uploadProducts } = require('../middleware/uploadFiles')
-
 // /admin
 router.get("/productos", adminController.list);
 
 router.get("/crear-producto", adminController.create);
 router.post("/crear-producto",uploadProducts.fields([
     { name: "imagePrimary", maxCount: 1}, 
-    { name:"imagesSecondary", maxCount: 3 }]),
+    { name:"imagesSecondary", maxCount: 1 }]),
      adminController.store);
 
 
-router.get("/editar-producto/", adminController.update);
+router.get("/editar-producto/:id", adminController.edit);
 router.put("/editar-producto/:id", uploadProducts.fields([
-    { name: "imagePrincipal"}
-]), )  
+    { name: "imagePrimary", maxCount: 1 },
+    { name: "imagesSecondary", maxCount: 3 }
+]), adminController.update);  
 
 
 
