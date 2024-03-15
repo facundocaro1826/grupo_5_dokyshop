@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+          <%- include('../partials/head',  {view: "Listado de productos",gliderCSSDisabled:true}) %>
+    <body>
+           <%- include('../partials/header') %>
+
+        <main class="list-product ">
+            <div class="listProd-container row">
+            <% product.forEach(p => { %>
+             
+           
+            <article class="listProduct col-6">
+                
+                <figure class="listProduct-img-container">
+                    <a href="/productos/detalle/<%= p.id %>"><img src="/images/products/<%= p.imagePrimary%>" alt="recommended products" ></a>
+                </figure>
+                <div class="listProduct-description">
+                    <a href="/productos/detalle/<%= p.id %>">
+                        <h5><%= p.title%></h5>
+                    </a>
+                    <p>$ <%= p.price%></p>
+                    <a class="listProduct-buyCart" href="/carrito-compra"><i class="fa-solid fa-cart-plus"></i></a>
+                </div>
+            </article>
+            <% }) %> 
+        </div>
+        </main>
+
+
+
+
+        <%- include('../partials/footer') %>
+
+        <%- include('../partials/scripts',{disabledGliderJS:true}) %>
+      
+    </body>
+</html>

@@ -93,7 +93,8 @@
             <!-- prod 1 -->
             
 
-            <% product.forEach(p => { %>
+            <% for( let i = 0; i < product.length && i< 4; i++ ) { %>
+                <% const p = product[i] %>
              
          
             <article class="recommendedProd">
@@ -102,7 +103,7 @@
                     <a href="/productos/detalle/<%= p.id %>"><img src="/images/products/<%= p.imagePrimary%>" alt="recommended products" ></a>
                 </figure>
                 <div class="recommendedProd-description">
-                    <a href="/productos/detalle">
+                    <a href="/productos/detalle/<%= p.id %>">
                         <h5><%= p.title%></h5>
                     </a>
                     <p>$ <%= p.price%></p>
@@ -110,7 +111,7 @@
                 </div>
             </article>
             
-           <% }) %> 
+           <% } %> 
         </div>
 
       

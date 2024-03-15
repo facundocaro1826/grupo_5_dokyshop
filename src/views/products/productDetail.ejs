@@ -82,25 +82,26 @@
             <h2 class="relatedProduct-title">Productos relacionados</h2>
             
             
-            <%listProduct.forEach(p => { %>
+        
              
-            
-
-            <article class="relatedProd">
+           <% for( let i = 0; i < listProduct.length && i< 4; i++ ) { %>
+            <% const product = listProduct[i] %>
+             <article class="relatedProd">
                 <figure class="relatedProd-img-container">
-                    <a href="/productos/detalle">
-                        <img class="relatedProd-img" src="/images/products/<%= p.imagePrimary%>" alt="related product 1">
+                    <a href="/productos/detalle/<%= product.id%>">
+                        <img class="relatedProd-img" src="/images/products/<%= product.imagePrimary%>" alt="related product 1">
                     </a>
                 </figure>
                 <div class="relatedProd-description">
-                    <a href="/productos/detalle">
-                        <h5><%= p.title%></h5>
+                    <a href="/productos/detalle/<%= product.id%>">
+                        <h5><%= product.title%></h5>
                     </a>
-                    <p>$ <%= p.price%></p>
+                    <p>$ <%= product.price%></p>
                     <a class="relatedProd-buycart" href="/carrito-compra"><i class="fa-solid fa-cart-plus"></i></a>
                 </div>    
             </article>
-             <% }) %>
+              
+             <% } %>
 
            
 
