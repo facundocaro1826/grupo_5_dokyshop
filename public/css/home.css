@@ -181,6 +181,11 @@
 }
 
 /* sección de productos recomendados */
+.main-homen article{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}.recommendedProd
 .main-home .recommendedProd-container {
     display: flex;
     flex-wrap: wrap;
@@ -423,7 +428,11 @@
         transform: scale(1.1);
     }
     
-    .main-home .recommendedProd-container {}
+    .main-home .recommendedProd-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
 
     .main-home .recommendedProd-container h2 {
         text-align: start
@@ -492,7 +501,9 @@
         object-fit: fill;
     }
 
-    .main-home .recommendedProd-container h2 {}
+    .main-home .recommendedProd-container h2 {
+    text-align: center;
+}
     
     .main-home .recommendedProd-container .recommendedProd {
         width: calc(24% - 1px)

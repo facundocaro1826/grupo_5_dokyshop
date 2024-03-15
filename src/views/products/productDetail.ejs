@@ -5,38 +5,30 @@
     <%- include('../partials/header') %>
 
     <main class="productDetail">
+
+        
+
         <div class="thumbnails-container">
-            <figure class="thumb-img-container"><img class="thumb-img" src="/images/products/ratita-02.jpg" alt="producto 1"></figure>
-            <figure class="thumb-img-container"><img class="thumb-img" src="/images/products/ratita-03.jpg" alt="producto 1"></figure>
-            <figure class="thumb-img-container"><img class="thumb-img" src="/images/products/ratita-04.jpg" alt="producto 1"></figure>
+            <figure class="thumb-img-container"><img class="thumb-img" src="/images/products/<%= product.imagePrimary%>" alt="producto 1"></figure>
+            <figure class="thumb-img-container"><img class="thumb-img" src="/images/products/<%= product.imagesSecondary%>" alt="producto 1"></figure>
+           
         </div>
         
         <div class="glider-contain prodDetail-glider-container">
             <div class="glider prodDetail-glider">
               <div class="prodDetail-content-container">
                 <figure class="prodDetail-image-container">
-                    <img src="/images/products/ratita-01.jpg" alt="producto 1">
+                    <img src="/images/products/<%= product.imagePrimary%>" alt="producto 1">
                 </figure>
               </div>
     
               <div class="prodDetail-content-container">
                 <figure class="prodDetail-image-container">
-                    <img src="/images/products/ratita-02.jpg" alt="producto 1">
+                    <img src="/images/products/<%= product.imagesSecondary%>" alt="producto 1">
                 </figure>
               </div>
 
-              <div class="prodDetail-content-container">
-                <figure class="prodDetail-image-container">
-                    <img src="/images/products/ratita-03.jpg" alt="producto 1">
-                </figure>
-              </div>
-
-              <div class="prodDetail-content-container">
-                <figure class="prodDetail-image-container">
-                    <img src="/images/products/ratita-04.jpg" alt="producto 1">
-                </figure>
-              </div>
-            </div>
+        </div>
           
             <button aria-label="Previous" class="glider-prev">
                 <i class="fa-solid fa-caret-left"></i>
@@ -60,13 +52,13 @@
                             <a href="#">Gatos</a>
                         </li>
                         <li>
-                            <a href="#">RATITA PIEL CON COLA COLOR X 3 UNIDADES</a>
+                            <a href="#"><%= product.title%></a>
                         </li>
                     </ul>  
                 </nav>
             </div>
-            <h2 class="prodDetail-title">Ratita Piel Con Cola Color x 3 Unidades</h2>
-            <p class="prodDetail-price">$1.000,00</p>
+            <h2 class="prodDetail-title"><%= product.title%></h2>
+            <p class="prodDetail-price">$<%= product.price%></p>
             <div class="product-quantity-container">
                     <button class="decrease-button">-</button>
                     <div class="quantity">  
@@ -83,73 +75,39 @@
         </div>
         <div class="description-container">
             <h2 class="description-title">Descripción del producto</h2>
-            <p class="description-paragraph">Juguete interactivo que previene la depresión en gatos. 
-                Set de 3 ratoncitos en felpa de colores surtidos, con chifle para que el Gato Salte, Olfatee, Sienta, Juegue y ademas no pare de correr ,disfruta jugando con tu gato a atrapar y a correr.
-                Para todo tipo de gatos.
-            </p>
+            <p class="description-paragraph"><%= product.description%></p>
         </div>
 
         <div class="relatedProduct-container">
             <h2 class="relatedProduct-title">Productos relacionados</h2>
-            <article class="relatedProd">
+            
+            
+        
+             
+           <% for( let i = 0; i < listProduct.length && i< 4; i++ ) { %>
+            <% const product = listProduct[i] %>
+             <article class="relatedProd">
                 <figure class="relatedProd-img-container">
-                    <a href="/productos/detalle">
-                        <img class="relatedProd-img" src="/images/products/relatedProd-01.jpg" alt="related product 1">
+                    <a href="/productos/detalle/<%= product.id%>">
+                        <img class="relatedProd-img" src="/images/products/<%= product.imagePrimary%>" alt="related product 1">
                     </a>
                 </figure>
                 <div class="relatedProd-description">
-                    <a href="/productos/detalle">
-                        <h5>Juguete Para Gato Pelota Con Motor Y Raton</h5>
+                    <a href="/productos/detalle/<%= product.id%>">
+                        <h5><%= product.title%></h5>
                     </a>
-                    <p>$ 9.112,00</p>
+                    <p>$ <%= product.price%></p>
                     <a class="relatedProd-buycart" href="/carrito-compra"><i class="fa-solid fa-cart-plus"></i></a>
                 </div>    
             </article>
+              
+             <% } %>
 
-            <article class="relatedProd">
-                <figure class="relatedProd-img-container">
-                    <a href="/productos/detalle">
-                        <img class="relatedProd-img" src="/images/products/relatedProd-02.jpg" alt="related product 2">
-                    </a>
-                </figure>
-                <div class="relatedProd-description">
-                    <a href="/productos/detalle">
-                        <h5>Cartocat Rascador Ondeado</h5>
-                    </a>
-                    <p>$ 4.300,00</p>
-                    <a class="relatedProd-buycart" href="/carrito-compra"><i class="fa-solid fa-cart-plus"></i></a>
-                </div>
-            </article>
+           
 
-            <article class="relatedProd">
-                <figure class="relatedProd-img-container">
-                    <a href="/productos/detalle">
-                        <img class="relatedProd-img" src="/images/products/relatedProd-03.jpg" alt="related product 3">
-                    </a>
-                </figure>
-                <div class="relatedProd-description">
-                    <a class="relatedProd-title-link" href="/productos/detalle">
-                        <h5>Varita Para Gato Spiderman</h5>
-                    </a>
-                    <p>$ 5.000,00</p>
-                    <a class="relatedProd-buycart" href="/carrito-compra"><i class="fa-solid fa-cart-plus"></i></a>
-                </div>
-            </article>
+            
 
-            <article class="relatedProd">
-                <figure class="relatedProd-img-container">
-                    <a href="/productos/detalle">
-                        <img class="relatedProd-img" src="/images/products/relatedProd-04.jpg" alt="related product 4">
-                    </a>
-                </figure>
-                <div class="relatedProd-description">
-                    <a href="/productos/detalle">
-                        <h5>Rascador Para Gatos Dos Niveles Sisal Y Peluche </h5>
-                    </a>
-                    <p>$ 5.000,00</p>
-                    <a class="relatedProd-buycart" href="/carrito-compra"><i class="fa-solid fa-cart-plus"></i></a>
-                </div>
-            </article>
+           
         </div>
         
     </main>

@@ -1,0 +1,69 @@
+.list-product .listProd-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.list-product .listProd-container h2 {
+    font-weight: bold;
+    color: var(--amarillo);
+    width: 100%;
+    text-align: center;
+}
+
+.list-product .listProd-container .listProduct {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid rgba(0,0,0,.125);
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.list-product .listProd-container .listProduct .listProduct-img-container {
+    width: 100%;
+    height: 170px;
+}
+.list-product .listProd-container .listProduct .listProduct-img-container a {}
+
+.list-product .listProd-container .listProduct .listProduct-img-container a img {
+    width: 100%;
+    height: 100%;
+}
+
+.list-product .listProd-container .listProduct .listProduct-description {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 16px;
+}
+
+.list-product .listProd-container .listProduct .listProduct-description h5 {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.list-product .listProd-container .listProduct .listProduct-description h5 a {}
+
+.list-product .listProd-container .listProduct .listProduct-description p {
+    font-weight: bold;
+    color: var(--amarillo);
+    margin: 0;
+}
+
+.list-product .listProd-container .listProduct .listProduct-description a.listProduct-buyCart {
+    background-color: var(--amarillo);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.list-product .listProd-container .listProduct .listProduct-description a.listProduct-buyCarti {
+    margin: 0;
+}
