@@ -92,59 +92,28 @@
             <h2>Productos recomendados</h2>
             <!-- prod 1 -->
             
+
+            <% product.forEach(p => { %>
+             
+         
             <article class="recommendedProd">
                 
                 <figure class="recommended-img-container">
-                    <a href="/productos/detalle"><img src="/images/products/relatedProd-01.jpg" alt="recommended products"></a>
+                    <a href="/productos/detalle/<%= p.id %>"><img src="/images/products/<%= p.imagePrimary%>" alt="recommended products" ></a>
                 </figure>
                 <div class="recommendedProd-description">
                     <a href="/productos/detalle">
-                        <h5>Juguete Para Gato Pelota Con Motor Y Raton</h5>
+                        <h5><%= p.title%></h5>
                     </a>
-                    <p>$ 9.112,00</p>
+                    <p>$ <%= p.price%></p>
                     <a class="recommendedProd-buyCart" href="/carrito-compra"><i class="fa-solid fa-cart-plus"></i></a>
                 </div>
             </article>
-            <!-- prod 2 -->
-            <article class="recommendedProd">
-                <figure class="recommended-img-container">
-                    <a href="/productos/detalle"><img src="/images/products/relatedProd-02.jpg" alt="recommended products"></a>
-                </figure>
-                <div class="recommendedProd-description">
-                    <a href="/productos/detalle">
-                        <h5>Juguete Para Gato Pelota Con Motor Y Raton</h5>
-                    </a>
-                    <p>$ 9.112,00</p>
-                    <a class="recommendedProd-buyCart" href="/carrito-compra"><i class="fa-solid fa-cart-plus"></i></a>
-                </div>
-            </article>
-            <!-- prod 3 -->
-            <article class="recommendedProd">
-                <figure class="recommended-img-container">
-                    <a href="/productos/detalle"><img src="/images/products/relatedProd-03.jpg" alt="recommended products"></a>
-                </figure>
-                <div class="recommendedProd-description">
-                    <a href="/productos/detalle">
-                        <h5>Juguete Para Gato Pelota Con Motor Y Raton</h5>
-                    </a>
-                    <p>$ 9.112,00</p>
-                    <a class="recommendedProd-buyCart" href="/carrito-compra"><i class="fa-solid fa-cart-plus"></i></a>
-                </div>
-            </article>
-            <!-- prod 4 -->
-            <article class="recommendedProd">
-                <figure class="recommended-img-container">
-                    <a href="/productos/detalle"><img src="/images/products/relatedProd-04.jpg" alt="recommended products"></a>
-                </figure>
-                <div class="recommendedProd-description">
-                    <h5>
-                        <a href="/productos/detalle">Juguete Para Gato Pelota Con Motor Y Raton</a>
-                    </h5>
-                    <p>$ 9.112,00</p>
-                    <a class="recommendedProd-buyCart" href="/carrito-compra"><i class="fa-solid fa-cart-plus"></i></a>
-                </div>
-            </article>
+            
+           <% }) %> 
         </div>
+
+      
 
         <div class="pet-section">
             <div class="image-with-list">
