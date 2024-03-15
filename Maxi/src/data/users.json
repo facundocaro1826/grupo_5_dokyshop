@@ -1,0 +1,112 @@
+[
+   {
+       "id": 1,
+       "Nombre": "Gaston",
+       "Apellido": "Ayala",
+       "Email": "gaston.ayala@example.com",
+       "Telefono": "+541112345678",
+       "Contraseña": "clave123",
+       "Rol": "administrador",
+       "Imagen": "Gaston_ayala.jpeg"       
+   },
+   {
+       "id": 2,
+       "Nombre": "Adriana",
+       "Apellido": "Escubilla",
+       "Email": "adriana.escubilla@example.com",
+       "Telefono": "+541155555555",
+       "Contraseña": "password456",
+       "Rol": "administrador",
+       "Imagen": "adriana_escubilla.jpeg"       
+   },
+   {
+       "id": 3,
+       "Nombre": "Maximiliano",
+       "Apellido": "Testa",
+       "Email": "maxi.testa1982@gmail.com",
+       "Telefono": "+541166666666",
+       "Contraseña": "secreto789",
+       "agreement": true,
+       "Rol": "administrador",
+       "Imagen": "maxi_testa.jpeg"
+       
+   },
+   {
+       "id": 4,
+       "Nombre": "Patricia",
+       "Apellido": "Gonzalez",
+       "Email": "patricia.gonzalez@example.com",
+       "Telefono": "+541177777777",
+       "Contraseña": "confidencial012",
+       "agreement": true,
+       "Rol": "administrador",
+       "Imagen": "patricia_gonzalez.jpeg"       
+   },
+   {
+       "id": 5,
+       "Nombre": "Diego",
+       "Apellido": "Pérez",
+       "Email": "diego.perez@example.com",
+       "Telefono": "+541188888888",
+       "Contraseña": "secreta123",
+       "agreement": true,
+       "Rol": "usuario",
+       "Imagen": "diego_perez.jpeg"       
+   },
+   {
+       "id": 6,
+       "Nombre": "Ana",
+       "Apellido": "Giménez",
+       "Email": "ana.gimenez@example.com",
+       "Telefono": "+541199999999",
+       "Contraseña": "clave456",
+       "agreement": true,
+       "Rol": "administrador",
+       "Imagen": "ana_gimenez.jpeg"       
+   },
+   {
+       "id": 7,
+       "Nombre": "Jorge",
+       "Apellido": "Sánchez",
+       "Email": "jorge.sanchez@example.com",
+       "Telefono": "+541122222222",
+       "Contraseña": "password789",
+       "agreement": true,
+       "Rol": "usuario",
+       "Imagen": "jorge_sanchez.jpeg"       
+   },
+   {
+       "id": 8,
+       "Nombre": "Florencia",
+       "Apellido": "Fernández",
+       "Email": "florencia.fernandez@example.com",
+       "Telefono": "+541133333333",
+       "Contraseña": "secreta456",
+       "agreement": true,
+       "Rol": "administrador",
+       "Imagen": "florencia_fernandez.jpeg"       
+   },
+   {
+       "id": 9,
+       "Nombre": "Martín",
+       "Apellido": "López",
+       "Email": "martin.lopez@example.com",
+       "Telefono": "+541144444444",
+       "Contraseña": "confidencial456",
+       "agreement": true,
+       "Rol": "usuario",
+       "Imagen": "martin_lopez.jpg"       
+   },
+   {
+       "id": 10,
+       "Nombre": "Paula",
+       "Apellido": "Gutiérrez",
+       "Email": "paula.gutierrez@example.com",
+       "Telefono": "+541155555555",
+       "Contraseña": "secreto123",
+       "agreement": true,
+       "Rol": "administrador",
+       "Imagen": "paula_gutierrez.jpg"       
+   }
+]
+

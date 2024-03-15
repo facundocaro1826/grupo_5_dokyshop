@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head',  {view: "Registrate", bootstrapCSSDisabled:true, gliderCSSDisabled:true}) %>
+    <body>
+        <%- include('../partials/header') %>
+        
+        <main class="register-main">
+            <h1>Formulario de registro</h1>
+            
+            <form class="form-principal" action="/" method="post">
+                <div class="contenedor-form" >
+                    <div class="nombre">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" class="" name="nombre" placeholder="Nombre Completo" id="nombre" required>
+                    </div>
+
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <input class="" type="email" name="email" placeholder="Ingrese su email" id="email" required>
+                    </div>
+
+                    <div class="contrasenia">
+                        <label for="contrasenia">Contraseña</label>
+                        <input class="" type="password" name="contrasenia" id="contrasenia" placeholder="contraseña" required>
+                    </div>   
+                </div>
+
+                <div class="recaptcha">
+                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                <div class="g-recaptcha" data-sitekey="6Lcq3V0pAAAAAFNz9XNCyzY9K-QFdt0p5Wau2LVf"></div>
+                
+            </div>
+                <div class="contenedor-button">
+                    <div class="boton">
+                        <button class="submit" type="submit">Crear cuenta</button>
+                        <a href="https://api.whatsapp.com/send?phone=1122882788" class="whatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <div class="inicio">   
+                        <p>¿Ya tienes cuenta?</p>
+                        <a class="inicio-session" href="/autenticacion/iniciar">INICIAR SESION</a>
+                    </div>
+                </div>
+            </form>
+            
+        </main>
+        <%- include('../partials/footer') %>
+
+        <%- include('../partials/scripts', {disabledBootstrapJS:true, disabledGliderJS:true}) %>
+    </body>
+</html>

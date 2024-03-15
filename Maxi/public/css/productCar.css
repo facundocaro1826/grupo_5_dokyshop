@@ -1,0 +1,280 @@
+main.main-carrito{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+main.main-carrito .titulo{
+    width: 100%;
+    display: flex;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main.main-carrito .titulo i.fa-arrow-left{
+    display: inline-block;
+    font-size: 18px;
+}
+
+main.main-carrito .titulo h1{
+    font-size: 22px;
+}
+
+main.main-carrito .titulo i.fa-cart-shopping{
+    display: inline-flex;
+    font-size: 20px;
+}
+
+main.main-carrito .contenedor-pro{
+    width: 90%;
+    margin: auto;
+}
+
+main.main-carrito .contenedor-pro h3{
+    margin-top: 20px;
+}
+
+main.main-carrito .contenedor-pro .producto{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    justify-content: center;
+    margin: 20px 0;
+    border-top: 1px solid gray;
+    padding-top: 20px;
+}
+
+main.main-carrito .contenedor-pro .producto figure{
+    width: 50%;
+}
+
+main.main-carrito .contenedor-pro .producto figure img{
+    width: 100%;
+}
+
+main.main-carrito .contenedor-pro .producto h4{
+    width: 50%;
+    text-align: center;
+}
+
+main.main-carrito .contenedor-pro .producto a{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--naranjaig);
+    font-weight: bolder;
+}
+
+main.main-carrito .contenedor-pro .producto p.cantidad{
+    width: 50%;
+    text-align: center;
+}
+
+main.main-carrito .contenedor-pro .producto p.precio{
+    width: 50%;
+    text-align: center;
+}
+
+main.main-carrito .contenedor-pro .producto p.conEnvio{
+    width: 50%;
+    text-align: center;
+}
+
+main.main-carrito .contenedor-pro .producto p.costoEnvio{
+    width: 50%;
+    text-align: center;
+}
+
+main.main-carrito .contenedor-pro .contenedor-total{
+    display: flex;
+    margin: 20px 0;
+    border-top: 1px solid gray;
+    padding-top: 20px;
+}
+
+main.main-carrito .contenedor-pro .contenedor-total p.total{
+    width: 50%;
+    text-align: center;
+    font-weight: bolder;
+}
+
+main.main-carrito .contenedor-pro .contenedor-total p.monto{
+    width: 50%;
+    text-align: center;
+}
+
+main.main-carrito .contenedor-pro .contenedor-boton{padding-bottom: 40px;display: flex;align-items: center;color: var(--naranjaig);}
+
+main.main-carrito .contenedor-pro .contenedor-boton button.compra{
+display: flex;
+margin: auto;
+padding: 10px;
+background-color: var(--amarillo);
+border: none;
+transition: all 400ms;
+}
+
+main.main-carrito .contenedor-pro .contenedor-boton button.compra:hover{
+    background-color: var(--naranjaig);
+    color: white;
+}
+
+main.main-carrito .contenedor-pro .contenedor-boton a.masProd{
+    font-size: 12px;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--naranjaig);
+}
+
+
+@media (min-width: 426px) {
+    main.main-carrito{}
+
+main.main-carrito .titulo{}
+
+main.main-carrito .titulo i.fa-arrow-left{}
+
+main.main-carrito .titulo h1{}
+
+main.main-carrito .titulo i.fa-cart-shopping{}
+
+main.main-carrito .contenedor-pro{}
+
+main.main-carrito .contenedor-pro h3{}
+
+main.main-carrito .contenedor-pro .producto{}
+
+main.main-carrito .contenedor-pro .producto figure{}
+
+main.main-carrito .contenedor-pro .producto figure img{}
+
+main.main-carrito .contenedor-pro .producto h4{}
+
+main.main-carrito .contenedor-pro .producto a{}
+
+main.main-carrito .contenedor-pro .producto p.cantidad{}
+
+main.main-carrito .contenedor-pro .producto p.precio{}
+
+main.main-carrito .contenedor-pro .producto p.conEnvio{}
+
+main.main-carrito .contenedor-pro .producto p.costoEnvio{}
+
+main.main-carrito .contenedor-pro .contenedor-total{}
+
+main.main-carrito .contenedor-pro .contenedor-total p.total{}
+
+main.main-carrito .contenedor-pro .contenedor-total p.monto{}
+
+main.main-carrito .contenedor-pro .contenedor-boton{}
+
+main.main-carrito .contenedor-pro .contenedor-boton button.compra{}
+
+main.main-carrito .contenedor-pro .contenedor-boton a.masProd{}
+}
+
+
+
+@media (min-width: 769px) {
+    main.main-carrito{
+    width: 60%;
+    margin: 20px auto;
+}
+
+main.main-carrito .titulo{
+    width: 100%;
+    margin: auto;
+}
+
+main.main-carrito .titulo i.fa-arrow-left{}
+
+main.main-carrito .titulo h1{}
+
+main.main-carrito .titulo i.fa-cart-shopping{}
+
+main.main-carrito .contenedor-pro{
+    width: 60%;
+}
+
+main.main-carrito .contenedor-pro h3{}
+
+main.main-carrito .contenedor-pro .producto{}
+
+main.main-carrito .contenedor-pro .producto figure{}
+
+main.main-carrito .contenedor-pro .producto figure img{}
+
+main.main-carrito .contenedor-pro .producto h4{}
+
+main.main-carrito .contenedor-pro .producto a{}
+
+main.main-carrito .contenedor-pro .producto p.cantidad{}
+
+main.main-carrito .contenedor-pro .producto p.precio{}
+
+main.main-carrito .contenedor-pro .producto p.conEnvio{}
+
+main.main-carrito .contenedor-pro .producto p.costoEnvio{}
+
+main.main-carrito .contenedor-pro .contenedor-total{}
+
+main.main-carrito .contenedor-pro .contenedor-total p.total{}
+
+main.main-carrito .contenedor-pro .contenedor-total p.monto{}
+
+main.main-carrito .contenedor-pro .contenedor-boton{}
+
+main.main-carrito .contenedor-pro .contenedor-boton button.compra{} 
+
+main.main-carrito .contenedor-pro .contenedor-boton a.masProd{font-size: 18px;font-weight: bolder;}
+}
+
+
+
+@media (min-width: 1024px) {
+    main.main-carrito{}
+
+main.main-carrito .titulo{}
+
+main.main-carrito .titulo i.fa-arrow-left{}
+
+main.main-carrito .titulo h1{}
+
+main.main-carrito .titulo i.fa-cart-shopping{}
+
+main.main-carrito .contenedor-pro{}
+
+main.main-carrito .contenedor-pro h3{}
+
+main.main-carrito .contenedor-pro .producto{}
+
+main.main-carrito .contenedor-pro .producto figure{}
+
+main.main-carrito .contenedor-pro .producto figure img{}
+
+main.main-carrito .contenedor-pro .producto h4{}
+
+main.main-carrito .contenedor-pro .producto a{}
+
+main.main-carrito .contenedor-pro .producto p.cantidad{}
+
+main.main-carrito .contenedor-pro .producto p.precio{}
+
+main.main-carrito .contenedor-pro .producto p.conEnvio{}
+
+main.main-carrito .contenedor-pro .producto p.costoEnvio{}
+
+main.main-carrito .contenedor-pro .contenedor-total{}
+
+main.main-carrito .contenedor-pro .contenedor-total p.total{}
+
+main.main-carrito .contenedor-pro .contenedor-total p.monto{}
+
+main.main-carrito .contenedor-pro .contenedor-boton{}
+
+main.main-carrito .contenedor-pro .contenedor-boton button.compra{}
+
+
+main.main-carrito .contenedor-pro .contenedor-boton a.masProd{} }

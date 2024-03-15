@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <%- include('../partials/head',  {view: "Iniciar sesión", bootstrapCSSDisabled:true, gliderCSSDisabled:true}) %>
+<body>
+    <%- include('../partials/header') %>
+
+    <main class="login-main">
+        <h1 class="titulo-login">Iniciar Sesion </h1>
+        <form class="form-principal" action="/" method="post">
+            <div class="contenedor-form" >
+                <div class="usuario">
+                    <label class="usuario" for="usuario"></label>
+                    <input class="usuario" type="text" name="usuario" placeholder="usuario" id="usuario" required>
+                </div>
+
+                <div class="contrasenia">
+                    <label for="contrasenia"></label>
+                    <input class="contrasenia" type="password" name="contrasenia" id="contrasenia" placeholder="contraseña" required>
+                </div>   
+            </div>
+
+            <div class="recordar">
+                <input class="checkbox" type="checkbox" name="recuerdamelo" id="recuerdamelo" value="recuerdamelo">
+                <label class="recordar" for="recuerdamelo">Recuerdamelo</label>
+                <a class="recordarContra" href="">Olvidaste la contraseña?</a>
+            </div>
+
+            <div class="contenedor-button">
+                <div class="boton">
+                    <button class="submit" type="submit">Entrar</button>
+                </div>
+
+                <div class="inicio">   
+                    <p>¿No tienes cuenta?</p>
+                    <a class="crear-cuenta" href="/autenticacion/registro">crear cuenta</a>
+                </div>
+            </div>
+        </form>
+        
+    </main>
+    <%- include('../partials/footer') %>
+
+    <%- include('../partials/scripts', {disabledBootstrapJS:true, disabledGliderJS:true}) %>
+</body>
+</html>

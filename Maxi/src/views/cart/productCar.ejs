@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head',  {view: "Carrito de compras", bootstrapCSSDisabled:true, gliderCSSDisabled:true}) %>
+<body>
+
+    <%- include('../partials/header') %>
+    <main class="main-carrito">
+        <div class="titulo">
+           <h1>Carrito de compras</h1>
+        </div>
+
+        <div class="contenedor-pro">
+            <h3>Productos</h3>
+
+            <div class="producto">
+                <figure>
+                    <img src="/images/products/ratitas.png" alt="foto producto">
+                </figure>
+                <h4>Ratita Piel con cola x 3</h4>
+                <a href="">Eliminar</a>
+                <p class="cantidad">- 1 +</p>
+                <p class="precio">$ 3.500</p>
+                <p class="conEnvio">Envio</p>
+                <p class="costoEnvio">$500,0</p>
+            </div>
+
+            <div class="producto">
+                <figure>
+                    <img src="/images/products/rascador.jpeg" alt="foto producto">
+                </figure>
+                <h4>Rascador de gatos</h4>
+                <a href="">Eliminar</a>
+                <p class="cantidad">- 1 +</p>
+                <p class="precio">$ 5.500</p>
+                <p class="conEnvio">Envio</p>
+                <p class="costoEnvio">$1.000</p>
+            </div>
+
+            <div class="contenedor-total">
+                <p class="total">Total</p>
+                <p class="monto">$ 10.500</p>
+            </div>
+
+            <div class="contenedor-boton">
+                <button class="compra" type="submit">Continuar compra</button>
+                <a href="/" class="masProd">Ver mas Productos</a>
+            </div>
+        </div>
+    </main>
+
+    <%- include('../partials/footer') %>
+
+    <%- include('../partials/scripts', {disabledBootstrapJS:true, disabledGliderJS:true}) %>
+
+        
+</body>
+</html>

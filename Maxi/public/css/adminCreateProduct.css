@@ -1,0 +1,128 @@
+.createProductForm-container {
+    background-color: var(--amarillo);
+    width: 100vw;
+    max-width: 1200px;
+}
+
+.createProductForm-container .createProductForm {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    width: 100%;
+    font-weight: bold;
+    align-items: center;
+}
+
+/* image */
+
+.createProductForm-container .createProductForm .imgProductForm {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.createProductForm-container .createProductForm .imgProductForm label {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.createProductForm-container .createProductForm .imgProductForm label img {
+    width: 20vw;
+    height: 15vh;
+    object-fit: contain;
+}
+
+
+.createProductForm-container .createProductForm .imgProductForm input {
+}
+
+/* title */
+
+.createProductForm-container .createProductForm-options {
+    display: flex;
+    flex: 1;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.createProductForm-container .createProductForm .createProductForm-title {
+    padding: 0 20px;
+}
+
+.createProductForm-container .createProductForm .createProductForm-title label {}
+
+.createProductForm-container .createProductForm .createProductForm-title input {}
+
+/* category */
+
+.createProductForm-container .createProductForm .createProductForm-category {
+    padding: 0 20px;
+}
+
+.createProductForm-container .createProductForm .createProductForm-category .categorySelect {}
+
+.createProductForm-container .createProductForm .createProductForm-category .categorySelect label {}
+
+.createProductForm-container .createProductForm .createProductForm-category .categorySelect option {}
+
+/* description */
+
+.createProductForm-container .createProductForm .createProductForm-description {
+    padding: 0 20px;
+}
+
+.createProductForm-container .createProductForm .createProductForm-description label {}
+
+.createProductForm-container .createProductForm .createProductForm-description textarea {
+    height: 100px;
+}
+
+/* price */
+
+.createProductForm-container .createProductForm .createProductForm-price {
+    padding: 0 20px;
+}
+
+.createProductForm-container .createProductForm .createProductForm-price label {}
+
+.createProductForm-container .createProductForm .createProductForm-price input {}
+
+/* sale */
+
+.createProductForm-container .createProductForm .createProductForm-sale {
+    padding: 0 20px;
+}
+
+.createProductForm-container .createProductForm .createProductForm-sale label {}
+
+.createProductForm-container .createProductForm .createProductForm-sale input {}
+
+/* stock */
+
+.createProductForm-container .createProductForm .createProductForm-stock {
+    padding: 0 20px;
+}
+
+.createProductForm-container .createProductForm .createProductForm-stock label {}
+
+.createProductForm-container .createProductForm .createProductForm-stock input {}
+
+/* stock */
+
+.createProductForm-container .createProductForm .createProductForm-color {
+    padding: 0 20px;
+}
+
+.createProductForm-container .createProductForm .createProductForm-color label {}
+
+.createProductForm-container .createProductForm .createProductForm-color input {}
+
+.createProductForm-container .createProductForm .createdProd-CreateBtn {
+    width: 55%;
+}
+
+button.btn.btn-primary.col-3.my-3.mx-auto {}
+
+

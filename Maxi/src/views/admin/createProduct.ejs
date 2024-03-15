@@ -1,0 +1,139 @@
+<div class="dashboard-content">
+  <h1>Crear producto</h1>
+  <div class="dash-topbar">
+    <div class="dash-addProduct-container">
+      <a class="dash-addProduct" href="/admin/productos">
+        <i class="fa-solid fa-arrow-left px-3"></i>
+        Volver al listado de productos
+      </a>
+    </div>
+  </div>
+
+  <div class="createProductForm-container container-fluid my-5 card">
+    <form class="createProductForm" action="/admin/crear-producto" method="post"  enctype="multipart/form-data">
+      <div class="col-6">
+        <div class="imgProductForm col-12 my-5 px-5">
+          <label for="productImg" class="form-label col-7"
+            >Imagen principal 
+            <img src="/images/other/no-image.png" alt="default product img" />
+          </label>
+          <input
+            type="file"
+            class="form-control form-control-sm"
+            name="imagePrimary"
+            id="productImg"
+            accept="img/*"
+          />
+        </div>
+        <div class="imgProductForm col-12 my-5 px-5">
+          <label for="productImg" class="form-label col-7"
+            >Imagenes Secundarias
+          </label>
+          <input
+            type="file"
+            class="form-control form-control-sm"
+            name="imagesSecondary"
+            id="Imagesecondary"
+          />
+        </div>
+      </div>
+      <div class="createProductForm-options col-6">
+        <div class="createProductForm-title col-6 my-3">
+          <label for="title" class="form-label"
+            >Titulo <span class="text-danger">*</span></label
+          >
+          <input
+            type="text"
+            class="form-control form-control-sm border-0 text-center"
+            name="title"
+            id="title"
+            value=""
+            placeholder=""
+          />
+        </div>
+        <div class="createProductForm-category col-6 my-3">
+          <label for="categorySelect" class="form-label"
+            >Categoría <span class="text-danger">*</span></label
+          >
+          <select
+            class="form-select form-select-sm text-center"
+            name="categorySelect"
+            aria-label="Desplegar las opciones"
+            id="categorySelect"
+          >
+            <option value="Indumentaria">Indumentaria</option>
+            <option value="Accesorios">Accesorios</option>
+            <option value="Juguetes">Juguetes</option>
+          </select>
+        </div>
+        <div class="createProductForm-description col-6 my-3">
+          <label for="description" class="form-label"
+            >Descripción <span class="text-danger">*</span></label
+          >
+          <textarea
+            class="form-control form-control-sm border-0 text-center"
+            name="description"
+            id="description"
+            placeholder="Colocar la descripción del producto"
+          ></textarea>
+        </div>
+        <div class="createProductForm-price col-6 my-3">
+          <label for="price" class="form-label"
+            >Precio <span class="text-danger">*</span></label
+          >
+          <input
+            type="number"
+            class="form-control form-control-sm border-0 text-center"
+            name="price"
+            id="price"
+            value="0"
+            placeholder=""
+          />
+        </div>
+        <div class="createProductForm-sale col-6 my-3">
+          <label for="sale" class="form-label"
+            >Descuento <span class="text-danger">*</span></label
+          >
+          <input
+            type="number"
+            class="form-control form-control-sm border-0 text-center"
+            name="sale"
+            id="sale"
+            value="0"
+            placeholder=""
+          />
+        </div>
+        <div class="createProductForm-stock col-6 my-3">
+          <label for="stock" class="form-label"
+            >Stock <span class="text-danger">*</span></label
+          >
+          <input
+            type="number"
+            class="form-control form-control-sm border-0 text-center"
+            name="stock"
+            id="stock"
+            value="0"
+            placeholder=""
+          />
+        </div>
+        <div class="createProductForm-color col-6 my-3">
+          <label for="color" class="form-label"
+            >Color <span class="text-danger">*</span></label>
+          <input
+            type="text"
+            class="form-control form-control-sm border-0 text-center"
+            name="color"
+            id="color"
+            value=""
+            placeholder="Colores separados por comas"
+          />
+        </div>
+        <button
+          type="submit"
+          class="createdProd-CreateBtn btn btn-success col-3 my-3 mx-auto">
+          Crear Producto
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

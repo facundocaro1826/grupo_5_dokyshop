@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <%- include('../partials/head', {view: "Panel de Administrador", gliderCSSDisabled:true, hamburgersCSSDisabled:true}) %>
+<body>
+    <main class="main-dashboard">
+        <nav class="dashboard-panel">
+            <div class="dash-logo-container">
+                <a href="/">
+                    <img class="dash-logo" src="/images/icon/logo.png" alt="logo">
+                </a>
+            </div>
+            <ul class="dash-ul">
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-table-cells-large"></i>
+                        <span>Panel</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin/productos">
+                        <i class="fa-solid fa-box-open"></i>
+                        <span>Productos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-table-list"></i>
+                        <span>Categorias</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Ventas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Usuarios</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span>Estadisticas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-regular fa-message"></i>
+                        <span>Mensajes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Ajustes</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="dashboard-content">
+            <%- contentView %>
+        </div>
+
+    </main>
+    
+    <%- include('../partials/scripts', {disabledGliderJS:true, disabledHamburgerJS:true}) %>
+    
+</body>
+</html>
