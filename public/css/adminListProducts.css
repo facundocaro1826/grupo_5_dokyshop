@@ -20,7 +20,7 @@
     align-items: center;
 }
 
-.dashboard-content .dash-topbar form {
+.dashboard-content .dash-topbar .dash-searchForm {
     background-color: var(--amarillo);
     padding: 10px;
     border-radius: 20px;
@@ -32,16 +32,15 @@
     justify-content: center;
     align-content: center;
     border: 2px solid rgba(0, 0, 0, 0);
-
 }
 
-.dashboard-content .dash-topbar form:hover {
+.dashboard-content .dash-topbar .dash-searchForm:hover {
     border: 2px solid rgba(0, 0, 0, 1);
 }
 
-.dashboard-content .dash-topbar form label {}
+.dashboard-content .dash-topbar .dash-searchForm label {}
 
-.dashboard-content .dash-topbar form input {
+.dashboard-content .dash-topbar .dash-searchForm input {
     width: 90%;
     border: none;
     outline: none;
@@ -51,17 +50,16 @@
 }
 
 
-.dashboard-content .dash-topbar form button {
+.dashboard-content .dash-topbar .dash-searchForm button {
     background-color: var(--amarillo);
     border: none;font-size: 1.1rem;
 }
 
-.dashboard-content .dash-topbar form button i {}
+.dashboard-content .dash-topbar .dash-searchForm button i {}
 
  /* FILTRO DE PRODUCTO */
 .dashboard-content .dash-topbar .dash-filter {
     background-color: var(--amarillo);
-    padding: 10px;
     border-radius: 20px;
     font-weight: bold;
     color: var(--gris);
@@ -73,8 +71,20 @@
 .dashboard-content .dash-topbar .dash-filter:hover {
     border: 2px solid rgba(0, 0, 0, 1);
 }
+.dashboard-content .dash-topbar .dash-filter .dash-filterForm {
+    
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    border: 2px solid rgba(0, 0, 0, 0);
 
-.dashboard-content .dash-topbar .dash-filter select {
+}
+.dashboard-content .dash-topbar .dash-filter .dash-filterForm select {
     border: none;
     padding-right: 10px;
     outline: none;
@@ -82,8 +92,15 @@
     font-weight: bold;
 }
 
-.dashboard-content .dash-topbar .dash-filter select option {
+.dashboard-content .dash-topbar .dash-filter .dash-filterForm select option {
     font-weight: bold;
+}
+
+.dashboard-content .dash-topbar .dash-filter .dash-filterForm button {
+    background-color: var(--amarillo);
+    border: none;
+    font-weight: bold;
+    padding-left: 15px;
 }
 
 /* CREAR PRODUCTO */

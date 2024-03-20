@@ -1,11 +1,11 @@
 const { loadData } = require('../../data');
 
 module.exports = (req, res) => {
-    const { dashboardKeywords } = req.query
+    const { dashboardKeywords, filterSelect } = req.query
     const products = loadData()
-    const productsFilter = products.filter(p => p.title.toLowerCase().includes(dashboardKeywords.toLowerCase()) || p.description.toLowerCase().includes(dashboardKeywords.toLowerCase()) || p.categorySelect.toLowerCase().includes(dashboardKeywords.toLowerCase()))
+    const productsFilter = products.filter(p => p.title.toLowerCase().includes(dashboardKeywords?.toLowerCase()) || p.description.toLowerCase().includes(dashboardKeywords?.toLowerCase()) || p.categorySelect.toLowerCase().includes(filterSelect?.toLowerCase()))
 
-    res.render("admin/searchProducResults", { products: productsFilter, dashboardKeywords}, (err, contentView) => {
+    res.render("admin/searchProducResults", { products: productsFilter, dashboardKeywords, filterSelect}, (err, contentView) => {
         err && res.send(err.message)
 
         res.render("partials/dashboard", {contentView})

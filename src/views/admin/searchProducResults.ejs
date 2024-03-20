@@ -1,6 +1,6 @@
 <h1>Lista de productos</h1>
 <div class="dash-topbar">
-  <form action="/admin/productos/buscar" method="get">
+  <form class="dash-searchForm" action="/admin/productos/buscar" method="get">
     <label for="dash-search"></label>
     <input
       type="text"
@@ -13,26 +13,37 @@
   </form>
 
   <div class="dash-filter">
-    <div><span>Mostrar:</span></div>
-    <select name="filterSelect" id="filterSelect">
-      <option value="Todos los productos">Todos los productos</option>
-      <option value="Indumentaria">Indumentaria</option>
-      <option value="Accesorios">Accesorios</option>
-      <option value="Juguetes">Juguetes</option>
-    </select>
+    <form class="dash-filterForm" action="/admin/productos/buscar" method="get">
+      <span>Mostrar:</span>
+      <select name="filterSelect" id="filterSelect">
+          <option value="Indumentaria">Indumentaria</option>
+          <option value="Accesorios">Accesorios</option>
+          <option value="Juguetes">Juguetes</option>
+      </select>
+      <button type="submit">Filtrar</button>
+    </form>
   </div>
 </div>
 
-<div class="col-12 text-center dashSearchTitle">
+<% if (dashboardKeywords) { %>
+  <div class="col-12 text-center dashSearchTitle">
     <h2>Resultado de la busqueda: <%= dashboardKeywords %></h2>
-</div>
+  </div>
 <% if (!products.length) { %>
   <div class="col-12 text-center dashSearchNoResults text-danger">
     <h3>*No hay productos que coincidan con la búsqueda*</h3>
   </div>
+<% } %>
+ 
+<% } else { %>
+  <div class="col-12 text-center dashSearchTitle">
+    <h2>Resultado del filtrado de: <%= filterSelect %></h2>
+  </div>
+
 
 
 <% } %>
+
 
 <table class="listProduct-table">
   <thead>

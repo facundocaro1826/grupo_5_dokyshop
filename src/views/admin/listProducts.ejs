@@ -1,6 +1,6 @@
 <h1>Lista de productos</h1>
 <div class="dash-topbar">
-  <form action="/admin/productos/buscar" method="get">
+  <form class="dash-searchForm" action="/admin/productos/buscar" method="get">
     <label for="dash-search"></label>
     <input
       type="text"
@@ -13,13 +13,15 @@
   </form>
 
   <div class="dash-filter">
-    <div><span>Mostrar:</span></div>
-    <select name="filterSelect" id="filterSelect">
-      <option value="Todos los productos">Todos los productos</option>
-      <option value="Indumentaria">Indumentaria</option>
-      <option value="Accesorios">Accesorios</option>
-      <option value="Juguetes">Juguetes</option>
-    </select>
+    <form class="dash-filterForm" action="/admin/productos/buscar" method="get">
+      <span>Mostrar:</span>
+      <select name="filterSelect" id="filterSelect">
+          <option value="Indumentaria">Indumentaria</option>
+          <option value="Accesorios">Accesorios</option>
+          <option value="Juguetes">Juguetes</option>
+      </select>
+      <button type="submit">Filtrar</button>
+    </form>
   </div>
 
   <div class="dash-addProduct-container">
@@ -73,7 +75,7 @@
       </td>
       <td>
         <div class="dash-actionButtons" role="group">
-          <a class="infoButton" href="">Info</a>
+          <a class="infoButton" href="/productos/detalle/<%= p.id %>">Info</a>
           <a class="editButton" href="/admin/editar-producto/<%= p.id %>">Editar</a>
           <a class="deleteButton" href="/admin/eliminar?id=<%= p.id %>&title=<%= p.title %>">Eliminar</a>
         </div>
