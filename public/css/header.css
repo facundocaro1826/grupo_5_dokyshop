@@ -106,14 +106,17 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 2px;
 }
 
-.main-header .top-bar .user-nav .user-list li {
-}
+.main-header .top-bar .user-nav .user-list li {}
 
 .main-header .top-bar .user-nav .user-list li a {
     font-size: 1.4rem;
     padding: 0 10px;
+    font-size: calc(1rem + 0.6vw);
 }
 .main-header .top-bar .user-nav .user-list li a:hover {
     border-bottom: 3px solid var(--amarilloPastel);
@@ -135,7 +138,7 @@
 
 .main-header .top-bar .buy-cart-container .buy-cart {}
 
-.main-header .top-bar .buy-cart-container .buy-cart i {}
+.main-header .top-bar .buy-cart-container .buy-cart i {vertical-align: middle;}
 
      /* ----- MAIN-NAV ----- */
 
@@ -162,9 +165,12 @@
 
 .main-header .main-nav .main-list {
     text-align: center;
-    padding: 20px;
     letter-spacing: 1px;
-    font-size: 2rem;
+}
+
+.main-header .main-nav .main-list.active {
+    padding: 20px;
+    font-size: calc(1rem + 0.6vw);
 }
 
 .main-header .main-nav .main-list li {
@@ -281,12 +287,12 @@
         position: absolute;
         right: 20px;
         top: 90px;
-        font-size: 2rem
     }
     
-    .main-header .top-bar .buy-cart-container .buy-cart {}
+    .main-header .top-bar .buy-cart-container .buy-cart {
+}
     
-    .main-header .top-bar .buy-cart-container .buy-cart i {}
+    .main-header .top-bar .buy-cart-container .buy-cart i {font-size: calc(1.2rem + 0.6vw);}
 
     /* ----- MAIN-NAV ----- */
     
@@ -307,6 +313,7 @@
         align-content: center;
         flex-wrap: wrap;
         padding: 0;
+        align-items: center;
     }
 
     .main-header .main-nav .main-list li {
@@ -319,7 +326,9 @@
 
     .main-header .main-nav .main-list li.list-contact {}
 
-    .main-header .main-nav .main-list li a {}
+    .main-header .main-nav .main-list li a {
+    font-size: calc(0.53rem + 0.6vw);
+}
     
     .main-header .main-nav .main-list li .a-index {}
 
@@ -413,12 +422,13 @@
         right: 110px;
         position: absolute;
         top: 122px;
-        z-index: 100
+        z-index: 100;
+        font-size: calc(0.53rem + 0.6vw);
     }
     
     .main-header .top-bar .buy-cart-container .buy-cart {}
     
-    .main-header .top-bar .buy-cart-container .buy-cart i {}
+    .main-header .top-bar .buy-cart-container .buy-cart i {font-size: calc(1.5rem + 0.6vw);}
 
     /* ----- MAIN-NAV ----- */
     
@@ -435,7 +445,7 @@
     .main-header .main-nav .main-list li.list-contact {}
 
     .main-header .main-nav .main-list li a {
-        font-size: 1.5rem;
+        font-size: calc(0.8rem + 0.6vw);
     }
 
     .main-header .main-nav .main-list li .a-index {}

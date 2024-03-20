@@ -207,6 +207,8 @@
     flex-wrap: wrap;
     border: 1px solid rgba(0,0,0,.125);
     width: 100%;
+    margin-bottom: 20px;
+    justify-content: center;
 }
 
 .main-home .recommendedProd-container .recommendedProd .recommended-img-container {
@@ -432,6 +434,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
+    justify-content: center;
 }
 
     .main-home .recommendedProd-container h2 {
@@ -449,8 +452,14 @@
     .main-home .recommendedProd-container .recommendedProd .recommended-img-container a img {}
     
     .main-home .recommendedProd-container .recommendedProd .recommendedProd-description {}
+
+    .main-home .recommendedProd-container .recommendedProd .recommendedProd-description .homeTitleLink {
+        width: 100%;
+    }
     
-    .main-home .recommendedProd-container .recommendedProd .recommendedProd-description h5 {}
+    .main-home .recommendedProd-container .recommendedProd .recommendedProd-description .homeTitleLink h5 {
+        width: 100%;
+    }
 
     .main-home .recommendedProd-container .recommendedProd .recommendedProd-description h5 a {}
     
@@ -506,7 +515,7 @@
 }
     
     .main-home .recommendedProd-container .recommendedProd {
-        width: calc(24% - 1px)
+        width: calc(24% - 1px);
     }
     
     .main-home .recommendedProd-container .recommendedProd .recommended-img-container {

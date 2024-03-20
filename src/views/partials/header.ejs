@@ -10,9 +10,9 @@
             <a href="/"><img src="/images/icon/logo.png" alt="logo"></a>
         </div>
         <div class="search-bar">
-            <form class="search-form" action="/search" method="post">
-                <label for="search"></label>
-                <input type="text" name="search" id="search" value="" placeholder="¿Que estas buscando?">
+            <form class="search-form" action="/buscar" method="get">
+                <label for="productSearched"></label>
+                <input type="text" name="productSearched" id="productSearched" placeholder="¿Que estas buscando?">
                 <button type="submit" class="search-icon">
                     <i class="fas fa-search"></i>
                 </button>
@@ -31,7 +31,7 @@
     </div>
     
     <nav class="main-nav" id="navigation">
-        <ul class="main-list">
+        <ul class="main-list" id="main-list">
             <li class="list-index"><a class="a-index" href="/">INICIO</a></li>
             <li class="list-products"><a class="a-products" href="/productos">PRODUCTOS</a></li>
             <li class="list-index"><a class="a-index" href="/admin/productos">ADMINISTRADOR</a></li>

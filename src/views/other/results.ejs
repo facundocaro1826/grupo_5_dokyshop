@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("../partials/head", {view: "Resultados de la búsqueda", gliderCSSDisabled:true}) %>
+<body>
+    <%- include("../partials/header") %>
+
+    <main class="results-main">
+        <div class="container">
+            <div class="row">
+                <div class="SearchTitleContainer col-12 text-center">
+                    <h2 class="searchTitle my-3">Resultados de la busqueda: <%= productSearched %></h2>
+                </div>
+                <% if (!products.length) { %>
+                    <div class="searchTitleNotFound-container col-12 text-center text-danger">
+                        <h2 class="searchTitleNotFound my-5">*No hay productos que coincidan con la busqueda*</h2>
+                    </div>
+                    <style>
+                        main {
+                            background-image: url("/images/other/fondoSearchNotFound.jpg") ;
+                            height: 700px;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: 100vw 700px;
+                        }
+                    </style>
+                <% } %>
+                
+                <div class="searchedProduct-container gap-3">
+                <% products.forEach(p => { %>
+                        <article class="searchedProduct">
+                            <figure class="searchedProd-imgContainer">
+                                <a href="/productos/detalle/<%= p.id %>">
+                                    <img src="/images/products/<%= p.imagePrimary %>" alt="product img">
+                                </a>
+                            </figure>
+                            <div class="searchedProduct-description">
+                                <a class="listProduct-titleLink" href="/productos/detalle/<%= p.id %>">
+                                    <h5><%= p.title%></h5>
+                                </a>
+                                <p><%= p.price %></p>
+                                <a class="searchedProduct-buyCart" href="/carrito-compra"><i class="fa-solid fa-cart-plus"></i></a>
+                            </div>
+                            
+                        </article>
+                <% }) %>
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <%- include("../partials/footer") %>
+
+    <%- include("../partials/scripts", {disabledGliderJS: true}) %>
+
+
+</body>
+</html>
