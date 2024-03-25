@@ -1,5 +1,4 @@
 body{
-  
 }
 
 main.register-main{
@@ -21,7 +20,21 @@ main.register-main h1{
     font-family: var(--familyOpenSans);
     color: #666262;
 }
+.imgProductForm{
+ width: 100%;
+ margin: auto;
+ height: auto;
+ padding: 30px;
+ /* display: flex; */
+ flex-wrap: wrap;
+ justify-content: center;
+}
 
+.imgProductForm label.form-label img{
+    width: 100px;
+    border-radius: 50%;
+    margin: 20px;
+}
 main.register-main form.form-principal{
     /* display: flex; */
     flex-wrap: wrap;
@@ -184,8 +197,24 @@ main.register-main form.form-principal .contenedor-button a.inicio-session{
 main.register-main form.form-principal .contenedor-button a.inicio-session:hover{
     color: rgb(215, 104, 104);
 }
+.contenedor-form p.text-danger-error{
+    color: red;
+    width: 70%;
+    height: auto;
+    text-align: center;
+}
+p.text-danger-error{
+    color: red;
+    height: auto;
+    display: inline-block;
+    width: 100%;
+    padding-top: 20px;
+}
 
-
+main.register-main label.form-label{
+    display: flex;
+    justify-content: center;
+}
 
 
 
@@ -267,11 +296,12 @@ main.register-main form.form-principal .contenedor-button a.inicio-session{}
 @media (min-width: 1024px) {
    
         body{
-        height: auto;
+        
+height: auto;
         }
     
     main.register-main{
-    height: 550px;
+    height: auto;
 }
     
     main.register-main h1{}
