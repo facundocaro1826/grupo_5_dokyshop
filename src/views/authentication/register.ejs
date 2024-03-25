@@ -6,22 +6,48 @@
         
         <main class="register-main">
             <h1>Formulario de registro</h1>
-            
-            <form class="form-principal" action="/" method="post">
+        
+        <form class="form-principal" action="/autenticacion/registro" method="post" enctype="multipart/form-data">
+                
+                <div class="imgProductForm">
+                    <label for="productImg" class="form-label"
+                      >
+                      <img src="/images/avatar/User-avatar.svg.png" alt="default product img" />
+                    </label>
+                    <input type="file" class="form-control" name="avatar" id="Img"/>
+                    <p class="msg-error"><%= locals.errors?.avatar?.msg %></p>
+                    
+                 
+                          
+                </div>
+                
                 <div class="contenedor-form" >
                     <div class="nombre">
-                        <label for="nombre">Nombre Completo</label>
-                        <input type="text" class="" name="nombre" placeholder="Nombre Completo" id="nombre" required>
+                        <% if (!locals.errors) { %>
+                          <label for="nombre">Nombre Completo</label>  
+                        <% } else { %>
+                          <p class="text-danger-error"><%= locals.errors?.name?.msg %></p>  
+                        <% }  %>
+                        <input type="text" class="" name="name" placeholder="Nombre Completo" id="nombre" value="<%= locals.old?.name %>">
+                        
                     </div>
 
                     <div class="email">
-                        <label for="email">Email</label>
-                        <input class="" type="email" name="email" placeholder="Ingrese su email" id="email" required>
+                        <% if (!locals.errors) { %>
+                           <label for="email">Email</label>
+                        <% } else { %>
+                           <p class="text-danger-error"><%= locals.errors?.email?.msg %></p>
+                        <% }  %>
+                        <input class="" type="email" name="email" placeholder="Ingrese su email" id="email" value="<%= locals.old?.email %>">
                     </div>
 
                     <div class="contrasenia">
-                        <label for="contrasenia">Contraseña</label>
-                        <input class="" type="password" name="contrasenia" id="contrasenia" placeholder="contraseña" required>
+                        <% if (!locals.errors) { %>
+                            <label for="contrasenia">Contraseña</label>
+                        <% } else { %>
+                             <p class="text-danger-error"><%= locals.errors?.password?.msg %></p>
+                        <% }  %>
+                        <input class="" type="password" name="password" id="contrasenia" placeholder="contraseña" value="<%= locals.old?.password %>">
                     </div>   
                 </div>
 

@@ -3,9 +3,11 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-const partials = require("express-partials")
+const partials = require("express-partials");
 const methodOverride =  require('method-override');
-
+const insertDataLocals = require('./middleware/insertDataLocals');
+const session = require('express-session');
+const createSessionFromCookie = require('./middleware/createSessionFromCookie');
 var app = express();
 
 /* RUTAS */
@@ -13,7 +15,10 @@ const otherRoutes = require('./routes/other.routes');
 const productRoutes = require('./routes/product.routes');
 const authRoutes = require('./routes/auth.routes');
 const cartRoutes = require('./routes/cart.routes');
-const adminRoutes = require('./routes/admin.routes')
+const adminRoutes = require('./routes/admin.routes');
+
+
+
 
 /* CONFIGS */
 app.set("views", path.join(__dirname, "/views"))
@@ -27,6 +32,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(methodOverride('_method'));
+app.use(session( {secret: "Mensaje secreto dokyshop", resave: false, saveUninitialized: false}));
+app.use(createSessionFromCookie)
+app.use(insertDataLocals) // usuario logueado y tiene acceso a session
 
 /* ENRUTADORES */
 app.use("/", otherRoutes);

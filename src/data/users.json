@@ -1,112 +1,133 @@
 [
    {
-       "id": 1,
-       "Nombre": "Gaston",
-       "Apellido": "Ayala",
-       "Email": "gaston.ayala@example.com",
-       "Telefono": "+541112345678",
-       "Contraseña": "clave123",
-       "Rol": "administrador",
-       "Imagen": "Gaston_ayala.jpeg"       
+      "id": 1,
+      "name": "Nadia Perez",
+      "email": "nadia@gmail.com",
+      "password": "$2a$12$O2CKzd.IBo2TChZ7qwTOteRXqyLuiXGy8gEpln9sMG.yT/oN.AmCW",
+      "role": "REGULAR",
+      "avatar": "perfilUser.jpg"
    },
    {
-       "id": 2,
-       "Nombre": "Adriana",
-       "Apellido": "Escubilla",
-       "Email": "adriana.escubilla@example.com",
-       "Telefono": "+541155555555",
-       "Contraseña": "password456",
-       "Rol": "administrador",
-       "Imagen": "adriana_escubilla.jpeg"       
+      "id": 2,
+      "name": "Gaston Ayala",
+      "email": "ayala@gmail.com",
+      "password": "$2a$12$mcGup7xHLF1C8HrlUO3M9uAZ8o1q5WypVWN.vh.0dywO3Z4kjkbUO",
+      "role": "REGULAR",
+      "avatar": "perfilUser.jpg"
    },
    {
-       "id": 3,
-       "Nombre": "Maximiliano",
-       "Apellido": "Testa",
-       "Email": "maxi.testa1982@gmail.com",
-       "Telefono": "+541166666666",
-       "Contraseña": "secreto789",
-       "agreement": true,
-       "Rol": "administrador",
-       "Imagen": "maxi_testa.jpeg"
-       
+      "id": 3,
+      "name": "ADRIANA ESCUBILLA",
+      "email": "escubilla@gmail.com",
+      "password": "$2a$12$deNCD8sRPI2MFcPdceryZOLBeXRLNC8zXhIRnIt0r/Nvl3GqQZQnu",
+      "role": "REGULAR",
+      "avatar": "perfilUser.jpg"
    },
    {
-       "id": 4,
-       "Nombre": "Patricia",
-       "Apellido": "Gonzalez",
-       "Email": "patricia.gonzalez@example.com",
-       "Telefono": "+541177777777",
-       "Contraseña": "confidencial012",
-       "agreement": true,
-       "Rol": "administrador",
-       "Imagen": "patricia_gonzalez.jpeg"       
+      "id": 4,
+      "name": "dfgdfgdfgdfgdfgdfg",
+      "email": "sddsasdg@gmail.com",
+      "password": "$2a$12$j/m84prNfIAA8RBY7kMuXeuKNmXcw.wgHmVDz3JKAjqg8Mij416MK",
+      "role": "REGULAR"
    },
    {
-       "id": 5,
-       "Nombre": "Diego",
-       "Apellido": "Pérez",
-       "Email": "diego.perez@example.com",
-       "Telefono": "+541188888888",
-       "Contraseña": "secreta123",
-       "agreement": true,
-       "Rol": "usuario",
-       "Imagen": "diego_perez.jpeg"       
+      "id": 5,
+      "name": "fhfghghjghjghj",
+      "email": "jesus.caro15@gmail.com",
+      "password": "$2a$12$5OwpBSyX6tP3Bw9fLjAgie4l6I9j7fCsk2TFv8g4J67NGOFugLI9u",
+      "role": "REGULAR"
    },
    {
-       "id": 6,
-       "Nombre": "Ana",
-       "Apellido": "Giménez",
-       "Email": "ana.gimenez@example.com",
-       "Telefono": "+541199999999",
-       "Contraseña": "clave456",
-       "agreement": true,
-       "Rol": "administrador",
-       "Imagen": "ana_gimenez.jpeg"       
+      "id": 6,
+      "name": "FGDFGFDGHGHJGHJG",
+      "email": "sdfsdf@gmail.com",
+      "password": "$2a$12$neNokOuqZCo79WosadgVpOHmHhKWt9XkulZErCgVJrc6yCCX2uA0C",
+      "role": "REGULAR"
    },
    {
-       "id": 7,
-       "Nombre": "Jorge",
-       "Apellido": "Sánchez",
-       "Email": "jorge.sanchez@example.com",
-       "Telefono": "+541122222222",
-       "Contraseña": "password789",
-       "agreement": true,
-       "Rol": "usuario",
-       "Imagen": "jorge_sanchez.jpeg"       
+      "id": 7,
+      "name": "fghfghfghfgh",
+      "email": "dgddtyety7@gmail.com",
+      "password": "$2a$12$eoo/.KIyPrZkYp/b5rIP4.OfbLZhJbGWbR.twYY8L0jPcAU9ReNXy",
+      "role": "REGULAR"
    },
    {
-       "id": 8,
-       "Nombre": "Florencia",
-       "Apellido": "Fernández",
-       "Email": "florencia.fernandez@example.com",
-       "Telefono": "+541133333333",
-       "Contraseña": "secreta456",
-       "agreement": true,
-       "Rol": "administrador",
-       "Imagen": "florencia_fernandez.jpeg"       
+      "id": 8,
+      "name": "sasdsadfgdfh",
+      "email": "asasdsad@gmail.com",
+      "password": "$2a$12$YMbe9dC8KO2tNSTmJQWuxufbrNYLzwFEjmwGe0kvAy9TVS4A1QPsu",
+      "role": "REGULAR"
    },
    {
-       "id": 9,
-       "Nombre": "Martín",
-       "Apellido": "López",
-       "Email": "martin.lopez@example.com",
-       "Telefono": "+541144444444",
-       "Contraseña": "confidencial456",
-       "agreement": true,
-       "Rol": "usuario",
-       "Imagen": "martin_lopez.jpg"       
+      "id": 9,
+      "name": "estrerteytfyhfdgh",
+      "email": "asdasd@gmail.com",
+      "password": "$2a$12$iprnWL4RmfazkCAqefOpRuIvUjc4Qy9EqpTGgBjJos0UKOlc5VHly",
+      "role": "REGULAR",
+      "avatar": "avatar-1711240985967.png"
    },
    {
-       "id": 10,
-       "Nombre": "Paula",
-       "Apellido": "Gutiérrez",
-       "Email": "paula.gutierrez@example.com",
-       "Telefono": "+541155555555",
-       "Contraseña": "secreto123",
-       "agreement": true,
-       "Rol": "administrador",
-       "Imagen": "paula_gutierrez.jpg"       
+      "id": 10,
+      "name": "fgyrtyrty",
+      "email": "aasad@gmail.com",
+      "password": "$2a$12$RPM.DS.I5UUR2QMg/w6Diuc2esI5X4cGdzRfM.l9cEm1srzVDcLsW",
+      "role": "REGULAR",
+      "avatar": "avatar-1711241087190.png"
+   },
+   {
+      "id": 11,
+      "name": "bcbcvb",
+      "email": "dfb@gmail.com",
+      "password": "$2a$12$xTxryz4x508ND.yZkoYAB.jQi4LPD/Zqj4o2WpP2q0k/iDdcXbzum",
+      "role": "REGULAR",
+      "avatar": "perfilUser.jpg"
+   },
+   {
+      "id": 12,
+      "name": "wetreryrtuyrt",
+      "email": "fdhdh@gmail.com",
+      "password": "$2a$12$IW1TVp2TTPbprDpkMUblhOqA8IdnfxOX9I04qdx/XIGczFnWCvItm",
+      "role": "REGULAR",
+      "avatar": "perfilUser.jpg"
+   },
+   {
+      "id": 13,
+      "name": "ññosdgfsg",
+      "email": "ervb@gmail.com",
+      "password": "$2a$12$.Vx7TbZz05gS5ZcAHnp6muQTBqwK1MqcVJSJyj7Radf3DMbpWkja2",
+      "role": "REGULAR",
+      "avatar": "perfilUser.jpg"
+   },
+   {
+      "id": 14,
+      "name": "ututyug",
+      "email": "qewqmm@gmail.com",
+      "password": "$2a$12$vTu0aCpVrA3prNvDfCiKouuuTq4Xhkv8RozdJ6a.xYAKgx9A0qbu.",
+      "role": "REGULAR",
+      "avatar": "perfilUser.jpg"
+   },
+   {
+      "id": 15,
+      "name": "jkñjklh",
+      "email": "fghfgh@gmail.com",
+      "password": "$2a$12$v0DgdC/YB5rgRHMTJgNzPuGNcKjKxteoQe.p.UO/wKGRtcrgL6e2u",
+      "role": "REGULAR",
+      "avatar": "perfilUser.jpg"
+   },
+   {
+      "id": 16,
+      "name": "ñljklhgjfghd",
+      "email": "truuan@gmail.com",
+      "password": "$2a$12$Zlnz93LcH4E8o8nKit8pFOzztKkju5TgrOHMwLfHBeIuuDaBEo3HO",
+      "role": "REGULAR",
+      "avatar": "avatar-1711242823902.png"
+   },
+   {
+      "id": 17,
+      "name": "rtuhfcvb",
+      "email": "xfgdf@gmail.com",
+      "password": "$2a$12$7xenLZbfENDJTe28/vjFxOKN5fHE6Nn93JuLMdLAasPqbLyjlKQf.",
+      "role": "REGULAR",
+      "avatar": "perfilUser.jpg"
    }
 ]
-
