@@ -9,7 +9,9 @@
       "stock": 23,
       "color": "Celeste",
       "imagePrimary": "Gigwi.webp",
-      "imagesSecondary": ["Gigwi2.webp"]
+      "imagesSecondary": [
+         "Gigwi2.webp"
+      ]
    },
    {
       "id": 2,
@@ -21,7 +23,9 @@
       "stock": 25,
       "color": "Naranja",
       "imagePrimary": "pelotaChuckit.webp",
-      "imagesSecondary": ["pelotaChuckit2.webp"]
+      "imagesSecondary": [
+         "pelotaChuckit2.webp"
+      ]
    },
    {
       "id": 3,
@@ -33,10 +37,12 @@
       "stock": 22,
       "color": "Blanco, Verde",
       "imagePrimary": "didactico1.webp",
-      "imagesSecondary": ["didactico2.webp"]
+      "imagesSecondary": [
+         "didactico2.webp"
+      ]
    },
    {
-   "id": 4,
+      "id": 4,
       "title": "Tunel Gato Combinable",
       "categorySelect": "Juguetes",
       "description": "Este túnel para gatos permitirá que tu mascota juegue, se divierta durante horas, tenga su espacio y pueda descansar. Este accesorio es totalmente seguro y se pliega para poder almacenarlo y transportarlo.",
@@ -45,7 +51,9 @@
       "stock": 10,
       "color": "Varios",
       "imagePrimary": "tunel1.webp",
-      "imagesSecondary": ["tunel2.webp"]
+      "imagesSecondary": [
+         "tunel2.webp"
+      ]
    },
    {
       "id": 5,
@@ -57,7 +65,9 @@
       "stock": 19,
       "color": "Varios",
       "imagePrimary": "chapita.webp",
-      "imagesSecondary": ["chapita2.webp"]
+      "imagesSecondary": [
+         "chapita2.webp"
+      ]
    },
    {
       "id": 6,
@@ -69,7 +79,9 @@
       "stock": 17,
       "color": "Varios",
       "imagePrimary": "pechera.webp",
-      "imagesSecondary": ["pechera2.webp"]
+      "imagesSecondary": [
+         "pechera2.webp"
+      ]
    },
    {
       "id": 7,
@@ -81,19 +93,23 @@
       "stock": 8,
       "color": "Marron",
       "imagePrimary": "rascador.webp",
-      "imagesSecondary": ["rascador2.webp"]
+      "imagesSecondary": [
+         "rascador2.webp"
+      ]
    },
    {
       "id": 8,
       "title": "Pack 6 Pelotas 3,5 Cm",
       "categorySelect": "Accesorios",
       "description": "Surtido de pelotas en tela con un cascabel interior",
-      "price": 3.210,
+      "price": 3.21,
       "sale": 5,
       "stock": 22,
       "color": "Varios",
       "imagePrimary": "pelota.webp",
-      "imagesSecondary": ["pelota2.webp"]
+      "imagesSecondary": [
+         "pelota2.webp"
+      ]
    },
    {
       "id": 9,
@@ -105,7 +121,9 @@
       "stock": 25,
       "color": "Verde",
       "imagePrimary": "sweater.webp",
-      "imagesSecondary": ["tabla.webp"]
+      "imagesSecondary": [
+         "tabla.webp"
+      ]
    },
    {
       "id": 10,
@@ -117,7 +135,9 @@
       "stock": 23,
       "color": "Rojo",
       "imagePrimary": "sweater2.webp",
-      "imagesSecondary": ["tabla.webp"]
+      "imagesSecondary": [
+         "tabla.webp"
+      ]
    },
    {
       "id": 11,
@@ -129,7 +149,9 @@
       "stock": 17,
       "color": "Verde",
       "imagePrimary": "sweater3.webp",
-      "imagesSecondary": ["tabla.webp"]
+      "imagesSecondary": [
+         "tabla.webp"
+      ]
    },
    {
       "id": 12,
@@ -141,7 +163,9 @@
       "stock": 19,
       "color": "Verde",
       "imagePrimary": "sweater4.webp",
-      "imagesSecondary": ["tabla.webp"]
+      "imagesSecondary": [
+         "tabla.webp"
+      ]
    },
    {
       "id": 13,
@@ -240,6 +264,20 @@
       "imagePrimary": "imagePrimary-1710303693542.webp",
       "imagesSecondary": [
          "imagesSecondary-1710303693543.webp"
+      ]
+   },
+   {
+      "id": 20,
+      "title": "Rascador Para Gatos 2 Pisos 80 Cm",
+      "categorySelect": "Accesorios",
+      "description": "Este rascador CanCat de dos niveles brindará diversión a tu gato, permitirá que pueda limar sus uñas, arañar y que tenga un lugar para jugar y descansar. Altura: 80 cm.",
+      "price": 75000,
+      "sale": 20,
+      "stock": 15,
+      "color": "negro",
+      "imagePrimary": "imagePrimary-1711424077491.webp",
+      "imagesSecondary": [
+         "no-image.png"
       ]
    }
 ]

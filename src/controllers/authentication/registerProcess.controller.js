@@ -23,10 +23,7 @@ module.exports = (req, res) =>{
 
          saveData(users, "users");
 
-         res.redirect("/");
-         
-         return
-        
+         return res.redirect("/");
     }
       
       res.render("./authentication/register", {
